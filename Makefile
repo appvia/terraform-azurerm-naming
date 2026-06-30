@@ -12,7 +12,7 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
-.PHONY: all security lint format documentation documentation-examples validate-all validate validate-examples init examples tests
+.PHONY: all security lint format documentation documentation-examples validate-all validate validate-examples init examples tests generate
 
 default: all
 
@@ -161,3 +161,8 @@ clean:
 		echo "--> Removing $$dir"; \
 		rm -rf $$dir; \
 	done
+
+generate:
+	@echo "--> Regenerating resource definitions from Azure docs"
+	@command -v uv >/dev/null 2>&1 || { echo "Error: uv is not installed. Install it with 'brew install uv' or see https://docs.astral.sh/uv/"; exit 1; }
+	@uv run scripts/generate_definitions.py

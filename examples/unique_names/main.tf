@@ -4,5 +4,7 @@ terraform {
 
 module "naming" {
   source = "../../"
-  suffix = ["dev", "uks"]
+
+  suffix        = ["prod", "uks"]
+  unique_length = 6
 }
