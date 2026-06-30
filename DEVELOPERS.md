@@ -10,7 +10,9 @@ This guide covers the tooling, automation, and workflows included in this reposi
 - [pre-commit](https://pre-commit.com/) — `pip install pre-commit` or `brew install pre-commit`
 - [terraform-docs](https://terraform-docs.io/) — `brew install terraform-docs`
 - [tflint](https://github.com/terraform-linters/tflint) — `brew install tflint`
+- [commitlint](https://commitlint.js.org/) — `brew install commitlint`
 - [checkov](https://www.checkov.io/) — `pip install checkov`
+- [uv](https://docs.astral.sh/uv/) — `brew install uv` (for running the resource definitions generator)
 
 ### Initial Setup
 
@@ -192,3 +194,4 @@ Run `make <target>` for common development tasks:
 | `make format` | Run `terraform fmt` recursively |
 | `make documentation` | Generate terraform-docs for all directories |
 | `make clean` | Remove all `.terraform` directories |
+| `make generate` | Regenerate `resource_definitions.json` from Azure docs (requires `uv`) |

@@ -1,0 +1,590 @@
+{
+  "ai_search": {
+    "dashes": true,
+    "max_length": 60,
+    "min_length": 2,
+    "regex": "^[a-z0-9][a-z0-9-]*[a-z0-9]$",
+    "scope": "global"
+  },
+  "aks_system_node_pool": {
+    "dashes": false,
+    "max_length": 12,
+    "min_length": 1,
+    "regex": "^[a-z][a-z0-9]*$",
+    "scope": "managed cluster"
+  },
+  "aks_user_node_pool": {
+    "dashes": false,
+    "max_length": 12,
+    "min_length": 1,
+    "regex": "^[a-z][a-z0-9]*$",
+    "scope": "managed cluster"
+  },
+  "app_configuration_store": {
+    "dashes": true,
+    "max_length": 50,
+    "min_length": 5,
+    "regex": "^[a-zA-Z0-9][a-zA-Z0-9-]*[a-zA-Z0-9]$",
+    "scope": "global"
+  },
+  "application_insights": {
+    "regex": "^[a-zA-Z0-9._()-]$|^[a-zA-Z0-9._()-][a-zA-Z0-9._()-]*[a-zA-Z0-9_()-]$"
+  },
+  "azure_ai_video_indexer": {
+    "dashes": true,
+    "max_length": 64,
+    "min_length": 2,
+    "regex": "^[a-zA-Z0-9][a-zA-Z0-9-]*[a-zA-Z0-9]$",
+    "scope": "resource group"
+  },
+  "azure_analysis_services_server": {
+    "regex": "^[a-z][a-z0-9]{2,62}$"
+  },
+  "azure_arc_enabled_kubernetes_cluster": {
+    "dashes": true,
+    "max_length": 63,
+    "min_length": 1,
+    "regex": "^[a-zA-Z0-9][a-zA-Z0-9_.-]*[a-zA-Z0-9]$",
+    "scope": "resource group"
+  },
+  "azure_arc_enabled_server": {
+    "dashes": true,
+    "max_length": 64,
+    "min_length": 1,
+    "regex": "^[a-zA-Z0-9][a-zA-Z0-9_.-]*[a-zA-Z0-9]$",
+    "scope": "resource group"
+  },
+  "azure_arc_gateway": {
+    "dashes": true,
+    "max_length": 64,
+    "min_length": 1,
+    "regex": "^[a-zA-Z0-9][a-zA-Z0-9_.-]*[a-zA-Z0-9]$",
+    "scope": "resource group"
+  },
+  "azure_arc_private_link_scope": {
+    "dashes": true,
+    "max_length": 63,
+    "min_length": 1,
+    "regex": "^[a-zA-Z0-9][a-zA-Z0-9_.-]*[a-zA-Z0-9]$",
+    "scope": "resource group"
+  },
+  "azure_backup_resource_guard": {
+    "dashes": true,
+    "max_length": 50,
+    "min_length": 2,
+    "regex": "^[a-zA-Z][a-zA-Z0-9-]*[a-zA-Z0-9]$",
+    "scope": "resource group"
+  },
+  "azure_cosmos_db_database": {
+    "dashes": true,
+    "max_length": 256,
+    "min_length": 1,
+    "regex": "^[a-zA-Z0-9][a-zA-Z0-9-._]*[a-zA-Z0-9]$",
+    "scope": "database account"
+  },
+  "azure_cosmos_db_postgresql_cluster": {
+    "dashes": true,
+    "max_length": 40,
+    "min_length": 3,
+    "regex": "^[a-z0-9][a-z0-9-]*[a-z0-9]$",
+    "scope": "global"
+  },
+  "azure_data_explorer_cluster": {
+    "regex": "^[a-z][a-z0-9]{3,21}$"
+  },
+  "azure_data_explorer_cluster_database": {
+    "dashes": true,
+    "max_length": 260,
+    "min_length": 1,
+    "regex": "^[a-zA-Z0-9][a-zA-Z0-9 ._-]*[a-zA-Z0-9]$",
+    "scope": "cluster"
+  },
+  "azure_databricks_access_connector": {
+    "dashes": true,
+    "max_length": 64,
+    "min_length": 3,
+    "regex": "^[a-zA-Z0-9][a-zA-Z0-9_-]*[a-zA-Z0-9]$",
+    "scope": "resource group"
+  },
+  "azure_digital_twin_instance": {
+    "dashes": true,
+    "max_length": 63,
+    "min_length": 3,
+    "regex": "^[a-zA-Z0-9][a-zA-Z0-9-]*[a-zA-Z0-9]$",
+    "scope": "resource group"
+  },
+  "azure_load_testing_instance": {
+    "regex": "^[a-zA-Z0-9]$|^[a-zA-Z0-9][a-zA-Z0-9_-]*[a-zA-Z0-9_]$"
+  },
+  "azure_managed_grafana": {
+    "dashes": true,
+    "max_length": 23,
+    "min_length": 2,
+    "regex": "^[a-zA-Z][a-zA-Z0-9-]*[a-zA-Z0-9]$",
+    "scope": "resource group"
+  },
+  "azure_migrate_project": {
+    "dashes": true,
+    "max_length": 63,
+    "min_length": 3,
+    "regex": "^[a-zA-Z0-9][a-zA-Z0-9_.-]*[a-zA-Z0-9]$",
+    "scope": "resource group"
+  },
+  "azure_monitor_action_group": {
+    "regex": "^[a-zA-Z0-9._()-]$|^[a-zA-Z0-9._()-][a-zA-Z0-9._()-]*[a-zA-Z0-9_()-]$"
+  },
+  "azure_monitor_alert_processing_rule": {
+    "dashes": true,
+    "max_length": 260,
+    "min_length": 1,
+    "regex": "^[a-zA-Z0-9][a-zA-Z0-9_.-]*[a-zA-Z0-9]$",
+    "scope": "resource group"
+  },
+  "azure_monitor_data_collection_rule": {
+    "dashes": true,
+    "max_length": 64,
+    "min_length": 1,
+    "regex": "^[a-zA-Z0-9][a-zA-Z0-9_-]*[a-zA-Z0-9]$",
+    "scope": "resource group"
+  },
+  "azure_sql_database": {
+    "dashes": true,
+    "max_length": 128,
+    "min_length": 1,
+    "regex": "^[a-zA-Z0-9][a-zA-Z0-9-._]*[a-zA-Z0-9]$",
+    "scope": "server"
+  },
+  "azure_sql_elastic_job_agent": {
+    "dashes": true,
+    "max_length": 128,
+    "min_length": 1,
+    "regex": "^[a-zA-Z0-9][a-zA-Z0-9-._]*[a-zA-Z0-9]$",
+    "scope": "server"
+  },
+  "azure_sql_elastic_pool": {
+    "dashes": true,
+    "max_length": 128,
+    "min_length": 1,
+    "regex": "^[a-zA-Z0-9][a-zA-Z0-9-._]*[a-zA-Z0-9]$",
+    "scope": "server"
+  },
+  "azure_stream_analytics": {
+    "dashes": true,
+    "max_length": 63,
+    "min_length": 3,
+    "regex": "^[a-zA-Z0-9][a-zA-Z0-9_-]*[a-zA-Z0-9]$",
+    "scope": "resource group"
+  },
+  "azure_synapse_analytics_private_link_hub": {
+    "regex": "^[a-z0-9]{1,45}$"
+  },
+  "azure_synapse_analytics_spark_pool": {
+    "dashes": false,
+    "max_length": 15,
+    "min_length": 1,
+    "regex": "^[a-zA-Z][a-zA-Z0-9]*$",
+    "scope": "workspace"
+  },
+  "azure_synapse_analytics_sql_dedicated_pool": {
+    "dashes": false,
+    "max_length": 60,
+    "min_length": 1,
+    "regex": "^[a-zA-Z0-9][a-zA-Z0-9_.]*[a-zA-Z0-9]$",
+    "scope": "workspace"
+  },
+  "backup_vault_policy": {
+    "dashes": true,
+    "max_length": 75,
+    "min_length": 1,
+    "regex": "^[a-zA-Z0-9][a-zA-Z0-9-]*[a-zA-Z0-9]$",
+    "scope": "backup vault"
+  },
+  "batch_accounts": {
+    "regex": "^[a-z0-9]{3,24}$"
+  },
+  "cdn_endpoint": {
+    "dashes": true,
+    "max_length": 50,
+    "min_length": 1,
+    "regex": "^[a-zA-Z0-9][a-zA-Z0-9-]*[a-zA-Z0-9]$",
+    "scope": "global"
+  },
+  "cloud_service": {
+    "regex": "^[a-zA-Z0-9][a-zA-Z0-9-]{0,13}[a-zA-Z0-9]$"
+  },
+  "container_apps_environment": {
+    "dashes": true,
+    "max_length": 60,
+    "min_length": 1,
+    "regex": "^[a-zA-Z0-9][a-zA-Z0-9_.-]*[a-zA-Z0-9]$",
+    "scope": "resource group"
+  },
+  "container_apps_job": {
+    "dashes": true,
+    "max_length": 32,
+    "min_length": 2,
+    "regex": "^[a-z][a-z0-9-]*[a-z0-9]$",
+    "scope": "resource group"
+  },
+  "container_registry": {
+    "regex": "^[a-zA-Z0-9]{5,50}$"
+  },
+  "custom_vision_prediction": {
+    "dashes": true,
+    "max_length": 64,
+    "min_length": 2,
+    "regex": "^[a-zA-Z0-9][a-zA-Z0-9-._]*[a-zA-Z0-9]$",
+    "resource_type": "Microsoft.CognitiveServices/accounts",
+    "scope": "resource group",
+    "slug": "cstv"
+  },
+  "custom_vision_training": {
+    "dashes": true,
+    "max_length": 64,
+    "min_length": 2,
+    "regex": "^[a-zA-Z0-9][a-zA-Z0-9-._]*[a-zA-Z0-9]$",
+    "resource_type": "Microsoft.CognitiveServices/accounts",
+    "scope": "resource group",
+    "slug": "cstvt"
+  },
+  "data_collection_endpoint": {
+    "dashes": true,
+    "max_length": 44,
+    "min_length": 1,
+    "regex": "^[a-zA-Z0-9][a-zA-Z0-9_-]*[a-zA-Z0-9]$",
+    "scope": "resource group"
+  },
+  "data_lake_store_account": {
+    "regex": "^[a-z0-9]{3,24}$"
+  },
+  "deployment_scripts": {
+    "dashes": true,
+    "max_length": 64,
+    "min_length": 1,
+    "regex": "^[a-zA-Z0-9][a-zA-Z0-9_.-]*[a-zA-Z0-9]$",
+    "scope": "resource group"
+  },
+  "dns_forwarding_ruleset": {
+    "dashes": true,
+    "max_length": 80,
+    "min_length": 1,
+    "regex": "^[a-zA-Z0-9][a-zA-Z0-9_-]*[a-zA-Z0-9]$",
+    "scope": "resource group"
+  },
+  "dns_private_resolver_inbound_endpoint": {
+    "dashes": true,
+    "max_length": 80,
+    "min_length": 1,
+    "regex": "^[a-zA-Z0-9][a-zA-Z0-9_-]*[a-zA-Z0-9]$",
+    "scope": "DNS resolver"
+  },
+  "dns_private_resolver_outbound_endpoint": {
+    "dashes": true,
+    "max_length": 80,
+    "min_length": 1,
+    "regex": "^[a-zA-Z0-9][a-zA-Z0-9_-]*[a-zA-Z0-9]$",
+    "scope": "DNS resolver"
+  },
+  "event_grid_namespace": {
+    "dashes": true,
+    "max_length": 50,
+    "min_length": 3,
+    "regex": "^[a-zA-Z0-9][a-zA-Z0-9-]*[a-zA-Z0-9]$",
+    "scope": "resource group"
+  },
+  "event_grid_system_topic": {
+    "dashes": true,
+    "max_length": 128,
+    "min_length": 3,
+    "regex": "^[a-zA-Z0-9][a-zA-Z0-9-]*[a-zA-Z0-9]$",
+    "scope": "resource group"
+  },
+  "event_grid_topic": {
+    "dashes": true,
+    "max_length": 50,
+    "min_length": 3,
+    "regex": "^[a-zA-Z0-9][a-zA-Z0-9-]*[a-zA-Z0-9]$",
+    "scope": "domain"
+  },
+  "event_hub": {
+    "dashes": true,
+    "max_length": 256,
+    "min_length": 1,
+    "regex": "^[a-zA-Z0-9][a-zA-Z0-9._-]*[a-zA-Z0-9]$",
+    "scope": "namespace"
+  },
+  "expressroute_direct": {
+    "dashes": true,
+    "max_length": 80,
+    "min_length": 1,
+    "regex": "^[a-zA-Z0-9][a-zA-Z0-9_.-]*[a-zA-Z0-9_]$",
+    "scope": "resource group"
+  },
+  "fabric_capacity": {
+    "dashes": false,
+    "max_length": 63,
+    "min_length": 3,
+    "regex": "^[a-z][a-z0-9]*$",
+    "scope": "region"
+  },
+  "foundry_account_project": {
+    "dashes": true,
+    "max_length": 64,
+    "min_length": 2,
+    "regex": "^[a-zA-Z0-9][a-zA-Z0-9-]*[a-zA-Z0-9]$",
+    "scope": "account"
+  },
+  "front_door_endpoint": {
+    "dashes": true,
+    "max_length": 46,
+    "min_length": 1,
+    "regex": "^[a-zA-Z0-9][a-zA-Z0-9-]*[a-zA-Z0-9]$",
+    "scope": "global"
+  },
+  "front_door_firewall_policy": {
+    "dashes": false,
+    "regex": "^[a-zA-Z][a-zA-Z0-9]{0,127}$"
+  },
+  "gallery": {
+    "regex": "^[a-zA-Z0-9][a-zA-Z0-9_.]{0,78}[a-zA-Z0-9]$"
+  },
+  "hosting_environment": {
+    "dashes": true,
+    "max_length": 36,
+    "min_length": 1,
+    "regex": "^[a-zA-Z0-9][a-zA-Z0-9-]*[a-zA-Z0-9]$",
+    "scope": "resource group"
+  },
+  "image_template": {
+    "dashes": true,
+    "max_length": 64,
+    "min_length": 1,
+    "regex": "^[a-zA-Z0-9][a-zA-Z0-9_.-]*[a-zA-Z0-9]$",
+    "scope": "resource group"
+  },
+  "ip_group": {
+    "dashes": true,
+    "max_length": 80,
+    "min_length": 1,
+    "regex": "^[a-zA-Z0-9][a-zA-Z0-9_.-]*[a-zA-Z0-9_]$",
+    "scope": "resource group"
+  },
+  "key_vault": {
+    "regex": "^[a-zA-Z][a-zA-Z0-9-]{1,22}[a-zA-Z0-9]$"
+  },
+  "key_vault_managed_hsm": {
+    "dashes": true,
+    "max_length": 24,
+    "min_length": 3,
+    "regex": "^[a-zA-Z][a-zA-Z0-9-]*[a-zA-Z0-9]$",
+    "scope": "global"
+  },
+  "load_balancer_external": {
+    "dashes": true,
+    "max_length": 80,
+    "min_length": 1,
+    "regex": "^[a-zA-Z0-9][a-zA-Z0-9_.-]*[a-zA-Z0-9_]$",
+    "resource_type": "Microsoft.Network/loadBalancers",
+    "scope": "resource group",
+    "slug": "lbe"
+  },
+  "load_balancer_internal": {
+    "dashes": true,
+    "max_length": 80,
+    "min_length": 1,
+    "regex": "^[a-zA-Z0-9][a-zA-Z0-9_.-]*[a-zA-Z0-9_]$",
+    "resource_type": "Microsoft.Network/loadBalancers",
+    "scope": "resource group",
+    "slug": "lbi"
+  },
+  "load_balancer_rule": {
+    "dashes": true,
+    "max_length": 80,
+    "min_length": 1,
+    "regex": "^[a-zA-Z0-9][a-zA-Z0-9_.-]*[a-zA-Z0-9_]$",
+    "scope": "load balancer"
+  },
+  "log_analytics_query_packs": {
+    "dashes": true,
+    "max_length": 63,
+    "min_length": 1,
+    "regex": "^[a-zA-Z0-9][a-zA-Z0-9_.-]*[a-zA-Z0-9]$",
+    "scope": "resource group"
+  },
+  "managed_devops_pools": {
+    "dashes": true,
+    "max_length": 63,
+    "min_length": 1,
+    "regex": "^[a-zA-Z0-9][a-zA-Z0-9_.-]*[a-zA-Z0-9]$",
+    "scope": "resource group"
+  },
+  "microsoft_purview_instance": {
+    "dashes": true,
+    "max_length": 63,
+    "min_length": 3,
+    "regex": "^[a-zA-Z0-9][a-zA-Z0-9-]*[a-zA-Z0-9]$",
+    "scope": "global"
+  },
+  "nat_gateway": {
+    "dashes": true,
+    "max_length": 80,
+    "min_length": 1,
+    "regex": "^[a-zA-Z0-9][a-zA-Z0-9_.-]*[a-zA-Z0-9_]$",
+    "scope": "resource group"
+  },
+  "network_security_group_security_rules": {
+    "dashes": true,
+    "max_length": 80,
+    "min_length": 1,
+    "regex": "^[a-zA-Z0-9][a-zA-Z0-9_.-]*[a-zA-Z0-9_]$",
+    "scope": "network security group"
+  },
+  "network_security_perimeter": {
+    "dashes": true,
+    "max_length": 80,
+    "min_length": 1,
+    "regex": "^[a-zA-Z0-9][a-zA-Z0-9_.-]*[a-zA-Z0-9_]$",
+    "scope": "resource group"
+  },
+  "postgresql_flexible_server": {
+    "dashes": true,
+    "max_length": 63,
+    "min_length": 3,
+    "regex": "^[a-z0-9][a-z0-9-]*[a-z0-9]$",
+    "scope": "global"
+  },
+  "power_bi_embedded": {
+    "regex": "^[a-z][a-z0-9]{2,62}$"
+  },
+  "proximity_placement_group": {
+    "dashes": true,
+    "max_length": 80,
+    "min_length": 1,
+    "regex": "^[a-zA-Z0-9][a-zA-Z0-9_.-]*[a-zA-Z0-9_]$",
+    "scope": "resource group"
+  },
+  "restore_point_collection": {
+    "dashes": true,
+    "max_length": 80,
+    "min_length": 1,
+    "regex": "^[a-zA-Z0-9][a-zA-Z0-9_.-]*[a-zA-Z0-9_]$",
+    "scope": "resource group"
+  },
+  "route_server": {
+    "dashes": true,
+    "max_length": 80,
+    "min_length": 1,
+    "regex": "^[a-zA-Z0-9][a-zA-Z0-9_.-]*[a-zA-Z0-9_]$",
+    "scope": "resource group"
+  },
+  "ssh_key": {
+    "dashes": true,
+    "max_length": 128,
+    "min_length": 1,
+    "regex": "^[a-zA-Z0-9][a-zA-Z0-9_.-]*[a-zA-Z0-9_]$",
+    "scope": "resource group"
+  },
+  "static_web_app": {
+    "dashes": true,
+    "max_length": 60,
+    "min_length": 2,
+    "regex": "^[a-zA-Z0-9][a-zA-Z0-9-]*[a-zA-Z0-9]$",
+    "scope": "resource group"
+  },
+  "storage_account": {
+    "regex": "^[a-z0-9]{3,24}$"
+  },
+  "storage_sync_service_name": {
+    "dashes": true,
+    "max_length": 60,
+    "min_length": 1,
+    "regex": "^[a-zA-Z0-9][a-zA-Z0-9_.-]*[a-zA-Z0-9]$",
+    "scope": "resource group"
+  },
+  "user_defined_route": {
+    "dashes": true,
+    "max_length": 80,
+    "min_length": 1,
+    "regex": "^[a-zA-Z0-9][a-zA-Z0-9_.-]*[a-zA-Z0-9_]$",
+    "scope": "route table"
+  },
+  "virtual_desktop_scaling_plan": {
+    "dashes": true,
+    "max_length": 64,
+    "min_length": 3,
+    "regex": "^[a-zA-Z0-9][a-zA-Z0-9_.-]*[a-zA-Z0-9_]$",
+    "scope": "resource group"
+  },
+  "virtual_machine": {
+    "regex": "^[a-zA-Z0-9][a-zA-Z0-9-]{0,13}[a-zA-Z0-9]$"
+  },
+  "virtual_machine_maintenance_configuration": {
+    "dashes": true,
+    "max_length": 63,
+    "min_length": 1,
+    "regex": "^[a-zA-Z0-9][a-zA-Z0-9_.-]*[a-zA-Z0-9]$",
+    "scope": "resource group"
+  },
+  "virtual_machine_scale_set": {
+    "regex": "^[a-zA-Z0-9][a-zA-Z0-9-]{0,13}[a-zA-Z0-9]$"
+  },
+  "virtual_network_manager": {
+    "dashes": true,
+    "max_length": 64,
+    "min_length": 1,
+    "regex": "^[a-zA-Z0-9][a-zA-Z0-9_.-]*[a-zA-Z0-9_]$",
+    "scope": "resource group"
+  },
+  "virtual_network_peering": {
+    "dashes": true,
+    "max_length": 80,
+    "min_length": 1,
+    "regex": "^[a-zA-Z0-9][a-zA-Z0-9_.-]*[a-zA-Z0-9_]$",
+    "scope": "virtual network"
+  },
+  "virtual_network_subnet": {
+    "dashes": true,
+    "max_length": 80,
+    "min_length": 1,
+    "regex": "^[a-zA-Z0-9][a-zA-Z0-9_.-]*[a-zA-Z0-9_]$",
+    "scope": "virtual network"
+  },
+  "virtual_wan_hub": {
+    "dashes": true,
+    "max_length": 80,
+    "min_length": 1,
+    "regex": "^[a-zA-Z0-9][a-zA-Z0-9_.-]*[a-zA-Z0-9_]$",
+    "scope": "resource group"
+  },
+  "vm_storage_account": {
+    "regex": "^[a-z0-9]{3,24}$"
+  },
+  "vpn_connection": {
+    "dashes": true,
+    "max_length": 80,
+    "min_length": 1,
+    "regex": "^[a-zA-Z0-9][a-zA-Z0-9_.-]*[a-zA-Z0-9_]$",
+    "scope": "VPN gateway"
+  },
+  "vpn_site": {
+    "dashes": true,
+    "max_length": 80,
+    "min_length": 1,
+    "regex": "^[a-zA-Z0-9][a-zA-Z0-9_.-]*[a-zA-Z0-9_]$",
+    "scope": "resource group"
+  },
+  "web_application_firewall_policy_rule_group": {
+    "dashes": true,
+    "max_length": 80,
+    "min_length": 1,
+    "regex": "^[a-zA-Z0-9][a-zA-Z0-9_.-]*[a-zA-Z0-9_]$",
+    "scope": "firewall policy"
+  },
+  "webpubsub": {
+    "dashes": true,
+    "max_length": 63,
+    "min_length": 3,
+    "regex": "^[a-zA-Z][a-zA-Z0-9-]*[a-zA-Z0-9]$",
+    "scope": "global"
+  }
+}

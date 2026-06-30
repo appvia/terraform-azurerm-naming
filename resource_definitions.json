@@ -1,0 +1,1838 @@
+{
+  "ai_search": {
+    "dashes": true,
+    "max_length": 60,
+    "min_length": 2,
+    "regex": "^[a-z0-9][a-z0-9-]*[a-z0-9]$",
+    "resource_type": "Microsoft.Search/searchServices",
+    "scope": "global",
+    "slug": "srch"
+  },
+  "aks_cluster": {
+    "dashes": true,
+    "max_length": 63,
+    "min_length": 1,
+    "regex": "^[a-zA-Z0-9-_]$|^[a-zA-Z0-9-_][a-zA-Z0-9-_]*[a-zA-Z0-9-_]$",
+    "resource_type": "Microsoft.ContainerService/managedClusters",
+    "scope": "resource group",
+    "slug": "aks"
+  },
+  "aks_system_node_pool": {
+    "dashes": false,
+    "max_length": 12,
+    "min_length": 1,
+    "regex": "^[a-z][a-z0-9]*$",
+    "resource_type": "Microsoft.ContainerService/managedClusters/agentPools",
+    "scope": "managed cluster",
+    "slug": "npsystem"
+  },
+  "aks_user_node_pool": {
+    "dashes": false,
+    "max_length": 12,
+    "min_length": 1,
+    "regex": "^[a-z][a-z0-9]*$",
+    "resource_type": "Microsoft.ContainerService/managedClusters/agentPools",
+    "scope": "managed cluster",
+    "slug": "np"
+  },
+  "api_management_service_instance": {
+    "dashes": true,
+    "max_length": 50,
+    "min_length": 1,
+    "regex": "^[a-zA-Z]$|^[a-zA-Z][a-zA-Z0-9-]*[a-zA-Z0-9-]$",
+    "resource_type": "Microsoft.ApiManagement/service",
+    "scope": "global",
+    "slug": "apim"
+  },
+  "app_configuration_store": {
+    "dashes": true,
+    "max_length": 50,
+    "min_length": 5,
+    "regex": "^[a-zA-Z0-9][a-zA-Z0-9-]*[a-zA-Z0-9]$",
+    "resource_type": "Microsoft.AppConfiguration/configurationStores",
+    "scope": "global",
+    "slug": "appcs"
+  },
+  "app_service_environment": {
+    "dashes": true,
+    "max_length": 50,
+    "min_length": 1,
+    "regex": "^[a-zA-Z]$|^[a-zA-Z][a-zA-Z0-9-]*[a-zA-Z0-9-]$",
+    "resource_type": "Microsoft.Web/hostingEnvironments",
+    "scope": "global",
+    "slug": "ase"
+  },
+  "app_service_plan": {
+    "dashes": true,
+    "max_length": 60,
+    "min_length": 1,
+    "regex": "^[a-zA-Z0-9-]$|^[a-zA-Z0-9-][a-zA-Z0-9-]*[a-zA-Z0-9-]$",
+    "resource_type": "Microsoft.Web/serverFarms",
+    "scope": "resource group",
+    "slug": "asp"
+  },
+  "application_gateway": {
+    "dashes": true,
+    "max_length": 80,
+    "min_length": 1,
+    "regex": "^[a-zA-Z0-9-_.]$|^[a-zA-Z0-9-_.][a-zA-Z0-9-_.]*[a-zA-Z0-9-_.]$",
+    "resource_type": "Microsoft.Network/applicationGateways",
+    "scope": "resource group",
+    "slug": "agw"
+  },
+  "application_insights": {
+    "dashes": false,
+    "max_length": 260,
+    "min_length": 1,
+    "regex": "^[a-zA-Z0-9._()-]$|^[a-zA-Z0-9._()-][a-zA-Z0-9._()-]*[a-zA-Z0-9_()-]$",
+    "resource_type": "Microsoft.Insights/components",
+    "scope": "resource group",
+    "slug": "appi"
+  },
+  "application_security_group": {
+    "dashes": true,
+    "max_length": 80,
+    "min_length": 1,
+    "regex": "^[a-zA-Z0-9-_.]$|^[a-zA-Z0-9-_.][a-zA-Z0-9-_.]*[a-zA-Z0-9-_.]$",
+    "resource_type": "Microsoft.Network/applicationSecurityGroups",
+    "scope": "resource group",
+    "slug": "asg"
+  },
+  "automation_account": {
+    "dashes": true,
+    "max_length": 50,
+    "min_length": 6,
+    "regex": "^[a-zA-Z][a-zA-Z0-9-]{4,48}[a-zA-Z0-9-]$",
+    "resource_type": "Microsoft.Automation/automationAccounts",
+    "scope": "resource group & region(see note below)",
+    "slug": "aa"
+  },
+  "availability_set": {
+    "dashes": true,
+    "max_length": 80,
+    "min_length": 1,
+    "regex": "^[a-zA-Z0-9-_.]$|^[a-zA-Z0-9-_.][a-zA-Z0-9-_.]*[a-zA-Z0-9-_.]$",
+    "resource_type": "Microsoft.Compute/availabilitySets",
+    "scope": "resource group",
+    "slug": "avail"
+  },
+  "azure_ai_video_indexer": {
+    "dashes": true,
+    "max_length": 64,
+    "min_length": 2,
+    "regex": "^[a-zA-Z0-9][a-zA-Z0-9-]*[a-zA-Z0-9]$",
+    "resource_type": "Microsoft.VideoIndexer/accounts",
+    "scope": "resource group",
+    "slug": "avi"
+  },
+  "azure_analysis_services_server": {
+    "dashes": false,
+    "max_length": 63,
+    "min_length": 3,
+    "regex": "^[a-z][a-z0-9]{2,62}$",
+    "resource_type": "Microsoft.AnalysisServices/servers",
+    "scope": "resource group",
+    "slug": "as"
+  },
+  "azure_arc_enabled_kubernetes_cluster": {
+    "dashes": true,
+    "max_length": 63,
+    "min_length": 1,
+    "regex": "^[a-zA-Z0-9][a-zA-Z0-9_.-]*[a-zA-Z0-9]$",
+    "resource_type": "Microsoft.Kubernetes/connectedClusters",
+    "scope": "resource group",
+    "slug": "arck"
+  },
+  "azure_arc_enabled_server": {
+    "dashes": true,
+    "max_length": 64,
+    "min_length": 1,
+    "regex": "^[a-zA-Z0-9][a-zA-Z0-9_.-]*[a-zA-Z0-9]$",
+    "resource_type": "Microsoft.HybridCompute/machines",
+    "scope": "resource group",
+    "slug": "arcs"
+  },
+  "azure_arc_gateway": {
+    "dashes": true,
+    "max_length": 64,
+    "min_length": 1,
+    "regex": "^[a-zA-Z0-9][a-zA-Z0-9_.-]*[a-zA-Z0-9]$",
+    "resource_type": "Microsoft.HybridCompute/gateways",
+    "scope": "resource group",
+    "slug": "arcgw"
+  },
+  "azure_arc_private_link_scope": {
+    "dashes": true,
+    "max_length": 63,
+    "min_length": 1,
+    "regex": "^[a-zA-Z0-9][a-zA-Z0-9_.-]*[a-zA-Z0-9]$",
+    "resource_type": "Microsoft.HybridCompute/privateLinkScopes",
+    "scope": "resource group",
+    "slug": "pls"
+  },
+  "azure_backup_resource_guard": {
+    "dashes": true,
+    "max_length": 50,
+    "min_length": 2,
+    "regex": "^[a-zA-Z][a-zA-Z0-9-]*[a-zA-Z0-9]$",
+    "resource_type": "Microsoft.DataProtection/resourceGuards",
+    "scope": "resource group",
+    "slug": "rgd"
+  },
+  "azure_bastion": {
+    "dashes": true,
+    "max_length": 80,
+    "min_length": 1,
+    "regex": "^[a-zA-Z0-9-_.]$|^[a-zA-Z0-9-_.][a-zA-Z0-9-_.]*[a-zA-Z0-9-_.]$",
+    "resource_type": "Microsoft.Network/bastionHosts",
+    "scope": "resource group",
+    "slug": "bas"
+  },
+  "azure_cosmos_db_database": {
+    "dashes": true,
+    "max_length": 256,
+    "min_length": 1,
+    "regex": "^[a-zA-Z0-9][a-zA-Z0-9-._]*[a-zA-Z0-9]$",
+    "resource_type": "Microsoft.DocumentDB/databaseAccounts/sqlDatabases",
+    "scope": "database account",
+    "slug": "cosmos"
+  },
+  "azure_cosmos_db_for_apache_cassandra_account": {
+    "dashes": true,
+    "max_length": 44,
+    "min_length": 3,
+    "regex": "^[a-zA-Z][a-zA-Z0-9-]{1,42}[a-zA-Z0-9-]$",
+    "resource_type": "Microsoft.DocumentDB/databaseAccounts",
+    "scope": "global",
+    "slug": "coscas"
+  },
+  "azure_cosmos_db_for_apache_gremlin_account": {
+    "dashes": true,
+    "max_length": 44,
+    "min_length": 3,
+    "regex": "^[a-zA-Z][a-zA-Z0-9-]{1,42}[a-zA-Z0-9-]$",
+    "resource_type": "Microsoft.DocumentDb/databaseAccounts",
+    "scope": "global",
+    "slug": "cosgrm"
+  },
+  "azure_cosmos_db_for_mongodb_account": {
+    "dashes": true,
+    "max_length": 44,
+    "min_length": 3,
+    "regex": "^[a-zA-Z][a-zA-Z0-9-]{1,42}[a-zA-Z0-9-]$",
+    "resource_type": "Microsoft.DocumentDB/databaseAccounts",
+    "scope": "global",
+    "slug": "cosmon"
+  },
+  "azure_cosmos_db_for_nosql_account": {
+    "dashes": true,
+    "max_length": 44,
+    "min_length": 3,
+    "regex": "^[a-zA-Z][a-zA-Z0-9-]{1,42}[a-zA-Z0-9-]$",
+    "resource_type": "Microsoft.DocumentDb/databaseAccounts",
+    "scope": "global",
+    "slug": "cosno"
+  },
+  "azure_cosmos_db_for_table_account": {
+    "dashes": true,
+    "max_length": 44,
+    "min_length": 3,
+    "regex": "^[a-zA-Z][a-zA-Z0-9-]{1,42}[a-zA-Z0-9-]$",
+    "resource_type": "Microsoft.DocumentDb/databaseAccounts",
+    "scope": "global",
+    "slug": "costab"
+  },
+  "azure_cosmos_db_postgresql_cluster": {
+    "dashes": true,
+    "max_length": 40,
+    "min_length": 3,
+    "regex": "^[a-z0-9][a-z0-9-]*[a-z0-9]$",
+    "resource_type": "Microsoft.DBforPostgreSQL/serverGroupsv2",
+    "scope": "global",
+    "slug": "cospos"
+  },
+  "azure_data_explorer_cluster": {
+    "dashes": false,
+    "max_length": 22,
+    "min_length": 4,
+    "regex": "^[a-z][a-z0-9]{3,21}$",
+    "resource_type": "Microsoft.Kusto/clusters",
+    "scope": "global",
+    "slug": "dec"
+  },
+  "azure_data_explorer_cluster_database": {
+    "dashes": true,
+    "max_length": 260,
+    "min_length": 1,
+    "regex": "^[a-zA-Z0-9][a-zA-Z0-9 ._-]*[a-zA-Z0-9]$",
+    "resource_type": "Microsoft.Kusto/clusters/databases",
+    "scope": "cluster",
+    "slug": "dedb"
+  },
+  "azure_data_factory": {
+    "dashes": true,
+    "max_length": 63,
+    "min_length": 3,
+    "regex": "^[a-zA-Z0-9-][a-zA-Z0-9-]{1,61}[a-zA-Z0-9-]$",
+    "resource_type": "Microsoft.DataFactory/factories",
+    "scope": "global",
+    "slug": "adf"
+  },
+  "azure_databricks_access_connector": {
+    "dashes": true,
+    "max_length": 64,
+    "min_length": 3,
+    "regex": "^[a-zA-Z0-9][a-zA-Z0-9_-]*[a-zA-Z0-9]$",
+    "resource_type": "Microsoft.Databricks/workspaces/accessConnectors",
+    "scope": "resource group",
+    "slug": "dbac"
+  },
+  "azure_databricks_workspace": {
+    "dashes": true,
+    "max_length": 64,
+    "min_length": 3,
+    "regex": "^[a-zA-Z0-9-_][a-zA-Z0-9-_]{1,62}[a-zA-Z0-9-_]$",
+    "resource_type": "Microsoft.Databricks/workspaces",
+    "scope": "resource group",
+    "slug": "dbw"
+  },
+  "azure_digital_twin_instance": {
+    "dashes": true,
+    "max_length": 63,
+    "min_length": 3,
+    "regex": "^[a-zA-Z0-9][a-zA-Z0-9-]*[a-zA-Z0-9]$",
+    "resource_type": "Microsoft.DigitalTwins/digitalTwinsInstances",
+    "scope": "resource group",
+    "slug": "dt"
+  },
+  "azure_load_testing_instance": {
+    "dashes": true,
+    "max_length": 64,
+    "min_length": 1,
+    "regex": "^[a-zA-Z0-9]$|^[a-zA-Z0-9][a-zA-Z0-9_-]*[a-zA-Z0-9_]$",
+    "resource_type": "Microsoft.LoadTestService/loadTests",
+    "scope": "global",
+    "slug": "lt"
+  },
+  "azure_machine_learning_workspace": {
+    "dashes": true,
+    "max_length": 33,
+    "min_length": 3,
+    "regex": "^[a-zA-Z0-9-_][a-zA-Z0-9-_]{1,31}[a-zA-Z0-9-_]$",
+    "resource_type": "Microsoft.MachineLearningServices/workspaces",
+    "scope": "resource group",
+    "slug": "mlw"
+  },
+  "azure_managed_grafana": {
+    "dashes": true,
+    "max_length": 23,
+    "min_length": 2,
+    "regex": "^[a-zA-Z][a-zA-Z0-9-]*[a-zA-Z0-9]$",
+    "resource_type": "Microsoft.Dashboard/grafana",
+    "scope": "resource group",
+    "slug": "amg"
+  },
+  "azure_managed_redis": {
+    "dashes": true,
+    "max_length": 63,
+    "min_length": 1,
+    "regex": "^[a-zA-Z0-9-]$|^[a-zA-Z0-9-][a-zA-Z0-9-]*[a-zA-Z0-9-]$",
+    "resource_type": "Microsoft.Cache/RedisEnterprise",
+    "scope": "global",
+    "slug": "amr"
+  },
+  "azure_migrate_project": {
+    "dashes": true,
+    "max_length": 63,
+    "min_length": 3,
+    "regex": "^[a-zA-Z0-9][a-zA-Z0-9_.-]*[a-zA-Z0-9]$",
+    "resource_type": "Microsoft.Migrate/assessmentProjects",
+    "scope": "resource group",
+    "slug": "migr"
+  },
+  "azure_monitor_action_group": {
+    "dashes": false,
+    "max_length": 260,
+    "min_length": 1,
+    "regex": "^[a-zA-Z0-9._()-]$|^[a-zA-Z0-9._()-][a-zA-Z0-9._()-]*[a-zA-Z0-9_()-]$",
+    "resource_type": "Microsoft.Insights/actionGroups",
+    "scope": "resource group",
+    "slug": "ag"
+  },
+  "azure_monitor_alert_processing_rule": {
+    "dashes": true,
+    "max_length": 260,
+    "min_length": 1,
+    "regex": "^[a-zA-Z0-9][a-zA-Z0-9_.-]*[a-zA-Z0-9]$",
+    "resource_type": "Microsoft.AlertsManagement/actionRules",
+    "scope": "resource group",
+    "slug": "apr"
+  },
+  "azure_monitor_data_collection_rule": {
+    "dashes": true,
+    "max_length": 64,
+    "min_length": 1,
+    "regex": "^[a-zA-Z0-9][a-zA-Z0-9_-]*[a-zA-Z0-9]$",
+    "resource_type": "Microsoft.Insights/dataCollectionRules",
+    "scope": "resource group",
+    "slug": "dcr"
+  },
+  "azure_openai_service": {
+    "dashes": true,
+    "max_length": 64,
+    "min_length": 2,
+    "regex": "^[a-zA-Z0-9-][a-zA-Z0-9-]{0,62}[a-zA-Z0-9-]$",
+    "resource_type": "Microsoft.CognitiveServices/accounts",
+    "scope": "resource group",
+    "slug": "oai"
+  },
+  "azure_sql_database": {
+    "dashes": true,
+    "max_length": 128,
+    "min_length": 1,
+    "regex": "^[a-zA-Z0-9][a-zA-Z0-9-._]*[a-zA-Z0-9]$",
+    "resource_type": "Microsoft.Sql/servers/databases",
+    "scope": "server",
+    "slug": "sqldb"
+  },
+  "azure_sql_database_server": {
+    "dashes": true,
+    "max_length": 63,
+    "min_length": 1,
+    "regex": "^[a-zA-Z0-9-]$|^[a-zA-Z0-9-][a-zA-Z0-9-]*[a-zA-Z0-9-]$",
+    "resource_type": "Microsoft.Sql/servers",
+    "scope": "global",
+    "slug": "sql"
+  },
+  "azure_sql_elastic_job_agent": {
+    "dashes": true,
+    "max_length": 128,
+    "min_length": 1,
+    "regex": "^[a-zA-Z0-9][a-zA-Z0-9-._]*[a-zA-Z0-9]$",
+    "resource_type": "Microsoft.Sql/servers/jobAgents",
+    "scope": "server",
+    "slug": "sqlja"
+  },
+  "azure_sql_elastic_pool": {
+    "dashes": true,
+    "max_length": 128,
+    "min_length": 1,
+    "regex": "^[a-zA-Z0-9][a-zA-Z0-9-._]*[a-zA-Z0-9]$",
+    "resource_type": "Microsoft.Sql/servers/elasticpool",
+    "scope": "server",
+    "slug": "sqlep"
+  },
+  "azure_stream_analytics": {
+    "dashes": true,
+    "max_length": 63,
+    "min_length": 3,
+    "regex": "^[a-zA-Z0-9][a-zA-Z0-9_-]*[a-zA-Z0-9]$",
+    "resource_type": "Microsoft.StreamAnalytics/cluster",
+    "scope": "resource group",
+    "slug": "asa"
+  },
+  "azure_synapse_analytics_private_link_hub": {
+    "dashes": false,
+    "max_length": 45,
+    "min_length": 1,
+    "regex": "^[a-z0-9]{1,45}$",
+    "resource_type": "Microsoft.Synapse/privateLinkHubs",
+    "scope": "resource group",
+    "slug": "synplh"
+  },
+  "azure_synapse_analytics_spark_pool": {
+    "dashes": false,
+    "max_length": 15,
+    "min_length": 1,
+    "regex": "^[a-zA-Z][a-zA-Z0-9]*$",
+    "resource_type": "Microsoft.Synapse/workspaces/bigDataPools",
+    "scope": "workspace",
+    "slug": "synsp"
+  },
+  "azure_synapse_analytics_sql_dedicated_pool": {
+    "dashes": false,
+    "max_length": 60,
+    "min_length": 1,
+    "regex": "^[a-zA-Z0-9][a-zA-Z0-9_.]*[a-zA-Z0-9]$",
+    "resource_type": "Microsoft.Synapse/workspaces/sqlPools",
+    "scope": "workspace",
+    "slug": "syndp"
+  },
+  "azure_synapse_analytics_workspaces": {
+    "dashes": true,
+    "max_length": 50,
+    "min_length": 1,
+    "regex": "^[a-zA-Z0-9-]$|^[a-zA-Z0-9-][a-zA-Z0-9-]*[a-zA-Z0-9-]$",
+    "resource_type": "Microsoft.Synapse/workspaces",
+    "scope": "global",
+    "slug": "synw"
+  },
+  "backup_vault_name": {
+    "dashes": true,
+    "max_length": 50,
+    "min_length": 2,
+    "regex": "^[a-zA-Z][a-zA-Z0-9-]{0,48}[a-zA-Z0-9-]$",
+    "resource_type": "Microsoft.DataProtection/backupVaults",
+    "scope": "resource group",
+    "slug": "bvault"
+  },
+  "backup_vault_policy": {
+    "dashes": true,
+    "max_length": 75,
+    "min_length": 1,
+    "regex": "^[a-zA-Z0-9][a-zA-Z0-9-]*[a-zA-Z0-9]$",
+    "resource_type": "Microsoft.DataProtection/backupVaults/backupPolicies",
+    "scope": "backup vault",
+    "slug": "bkpol"
+  },
+  "batch_accounts": {
+    "dashes": false,
+    "max_length": 24,
+    "min_length": 3,
+    "regex": "^[a-z0-9]{3,24}$",
+    "resource_type": "Microsoft.Batch/batchAccounts",
+    "scope": "region",
+    "slug": "ba"
+  },
+  "bot_service": {
+    "dashes": true,
+    "max_length": 64,
+    "min_length": 2,
+    "regex": "^[a-zA-Z0-9-_.][a-zA-Z0-9-_.]{0,62}[a-zA-Z0-9-_.]$",
+    "resource_type": "Microsoft.BotService/botServices",
+    "scope": "global",
+    "slug": "bot"
+  },
+  "cdn_endpoint": {
+    "dashes": true,
+    "max_length": 50,
+    "min_length": 1,
+    "regex": "^[a-zA-Z0-9][a-zA-Z0-9-]*[a-zA-Z0-9]$",
+    "resource_type": "Microsoft.Cdn/profiles/endpoints",
+    "scope": "global",
+    "slug": "cdne"
+  },
+  "cdn_profile": {
+    "dashes": true,
+    "max_length": 260,
+    "min_length": 1,
+    "regex": "^[a-zA-Z0-9-]$|^[a-zA-Z0-9-][a-zA-Z0-9-]*[a-zA-Z0-9-]$",
+    "resource_type": "Microsoft.Cdn/profiles",
+    "scope": "resource group",
+    "slug": "cdnp"
+  },
+  "cloud_service": {
+    "dashes": true,
+    "max_length": 15,
+    "min_length": 1,
+    "regex": "^[a-zA-Z0-9][a-zA-Z0-9-]{0,13}[a-zA-Z0-9]$",
+    "resource_type": "Microsoft.Compute/cloudServices",
+    "scope": "resource group",
+    "slug": "cld"
+  },
+  "communication_services": {
+    "dashes": true,
+    "max_length": 63,
+    "min_length": 1,
+    "regex": "^[a-zA-Z0-9-_]$|^[a-zA-Z0-9-_][a-zA-Z0-9-_]*[a-zA-Z0-9-_]$",
+    "resource_type": "Microsoft.Communication/communicationServices",
+    "scope": "global",
+    "slug": "acs"
+  },
+  "computer_vision": {
+    "dashes": true,
+    "max_length": 64,
+    "min_length": 2,
+    "regex": "^[a-zA-Z0-9-][a-zA-Z0-9-]{0,62}[a-zA-Z0-9-]$",
+    "resource_type": "Microsoft.CognitiveServices/accounts",
+    "scope": "resource group",
+    "slug": "cv"
+  },
+  "connections": {
+    "dashes": true,
+    "max_length": 80,
+    "min_length": 1,
+    "regex": "^[a-zA-Z0-9-_.]$|^[a-zA-Z0-9-_.][a-zA-Z0-9-_.]*[a-zA-Z0-9-_.]$",
+    "resource_type": "Microsoft.Network/connections",
+    "scope": "resource group",
+    "slug": "con"
+  },
+  "container_apps": {
+    "dashes": true,
+    "max_length": 32,
+    "min_length": 2,
+    "regex": "^[a-zA-Z][a-zA-Z0-9-]{0,30}[a-zA-Z0-9-]$",
+    "resource_type": "Microsoft.App/containerApps",
+    "scope": "resource group",
+    "slug": "ca"
+  },
+  "container_apps_environment": {
+    "dashes": true,
+    "max_length": 60,
+    "min_length": 1,
+    "regex": "^[a-zA-Z0-9][a-zA-Z0-9_.-]*[a-zA-Z0-9]$",
+    "resource_type": "Microsoft.App/managedEnvironments",
+    "scope": "resource group",
+    "slug": "cae"
+  },
+  "container_apps_job": {
+    "dashes": true,
+    "max_length": 32,
+    "min_length": 2,
+    "regex": "^[a-z][a-z0-9-]*[a-z0-9]$",
+    "resource_type": "Microsoft.App/jobs",
+    "scope": "resource group",
+    "slug": "caj"
+  },
+  "container_instance": {
+    "dashes": true,
+    "max_length": 63,
+    "min_length": 1,
+    "regex": "^[a-zA-Z0-9-]$|^[a-zA-Z0-9-][a-zA-Z0-9-]*[a-zA-Z0-9-]$",
+    "resource_type": "Microsoft.ContainerInstance/containerGroups",
+    "scope": "resource group",
+    "slug": "ci"
+  },
+  "container_registry": {
+    "dashes": false,
+    "max_length": 50,
+    "min_length": 5,
+    "regex": "^[a-zA-Z0-9]{5,50}$",
+    "resource_type": "Microsoft.ContainerRegistry/registries",
+    "scope": "global",
+    "slug": "cr"
+  },
+  "content_moderator": {
+    "dashes": true,
+    "max_length": 64,
+    "min_length": 2,
+    "regex": "^[a-zA-Z0-9-][a-zA-Z0-9-]{0,62}[a-zA-Z0-9-]$",
+    "resource_type": "Microsoft.CognitiveServices/accounts",
+    "scope": "resource group",
+    "slug": "cm"
+  },
+  "content_safety": {
+    "dashes": true,
+    "max_length": 64,
+    "min_length": 2,
+    "regex": "^[a-zA-Z0-9-][a-zA-Z0-9-]{0,62}[a-zA-Z0-9-]$",
+    "resource_type": "Microsoft.CognitiveServices/accounts",
+    "scope": "resource group",
+    "slug": "cs"
+  },
+  "custom_vision": {
+    "dashes": true,
+    "max_length": 64,
+    "min_length": 2,
+    "regex": "^[a-zA-Z0-9-][a-zA-Z0-9-]{0,62}[a-zA-Z0-9-]$",
+    "resource_type": "Microsoft.CognitiveServices/accounts",
+    "scope": "resource group",
+    "slug": "cstvt"
+  },
+  "custom_vision_prediction": {
+    "dashes": true,
+    "max_length": 64,
+    "min_length": 2,
+    "regex": "^[a-zA-Z0-9][a-zA-Z0-9-._]*[a-zA-Z0-9]$",
+    "resource_type": "Microsoft.CognitiveServices/accounts",
+    "scope": "resource group",
+    "slug": "cstv"
+  },
+  "custom_vision_training": {
+    "dashes": true,
+    "max_length": 64,
+    "min_length": 2,
+    "regex": "^[a-zA-Z0-9][a-zA-Z0-9-._]*[a-zA-Z0-9]$",
+    "resource_type": "Microsoft.CognitiveServices/accounts",
+    "scope": "resource group",
+    "slug": "cstvt"
+  },
+  "data_collection_endpoint": {
+    "dashes": true,
+    "max_length": 44,
+    "min_length": 1,
+    "regex": "^[a-zA-Z0-9][a-zA-Z0-9_-]*[a-zA-Z0-9]$",
+    "resource_type": "Microsoft.Insights/dataCollectionEndpoints",
+    "scope": "resource group",
+    "slug": "dce"
+  },
+  "data_lake_store_account": {
+    "dashes": false,
+    "max_length": 24,
+    "min_length": 3,
+    "regex": "^[a-z0-9]{3,24}$",
+    "resource_type": "Microsoft.DataLakeStore/accounts",
+    "scope": "global",
+    "slug": "dls"
+  },
+  "database_migration_service_instance": {
+    "dashes": true,
+    "max_length": 62,
+    "min_length": 2,
+    "regex": "^[a-zA-Z0-9-_.][a-zA-Z0-9-_.]{0,60}[a-zA-Z0-9-_.]$",
+    "resource_type": "Microsoft.DataMigration/services",
+    "scope": "resource group",
+    "slug": "dms"
+  },
+  "deployment_scripts": {
+    "dashes": true,
+    "max_length": 64,
+    "min_length": 1,
+    "regex": "^[a-zA-Z0-9][a-zA-Z0-9_.-]*[a-zA-Z0-9]$",
+    "resource_type": "Microsoft.Resources/deploymentScripts",
+    "scope": "resource group",
+    "slug": "script"
+  },
+  "disk_encryption_set": {
+    "dashes": true,
+    "max_length": 80,
+    "min_length": 1,
+    "regex": "^[a-zA-Z0-9-_]$|^[a-zA-Z0-9-_][a-zA-Z0-9-_]*[a-zA-Z0-9-_]$",
+    "resource_type": "Microsoft.Compute/diskEncryptionSets",
+    "scope": "resource group",
+    "slug": "des"
+  },
+  "dns_forwarding_ruleset": {
+    "dashes": true,
+    "max_length": 80,
+    "min_length": 1,
+    "regex": "^[a-zA-Z0-9][a-zA-Z0-9_-]*[a-zA-Z0-9]$",
+    "resource_type": "Microsoft.Network/dnsForwardingRulesets",
+    "scope": "resource group",
+    "slug": "dnsfrs"
+  },
+  "dns_private_resolver": {
+    "dashes": true,
+    "max_length": 80,
+    "min_length": 1,
+    "regex": "^[a-zA-Z0-9-_]$|^[a-zA-Z0-9-_][a-zA-Z0-9-_]*[a-zA-Z0-9-_]$",
+    "resource_type": "Microsoft.Network/dnsResolvers",
+    "scope": "resource group",
+    "slug": "dnspr"
+  },
+  "dns_private_resolver_inbound_endpoint": {
+    "dashes": true,
+    "max_length": 80,
+    "min_length": 1,
+    "regex": "^[a-zA-Z0-9][a-zA-Z0-9_-]*[a-zA-Z0-9]$",
+    "resource_type": "Microsoft.Network/dnsResolvers/inboundEndpoints",
+    "scope": "DNS resolver",
+    "slug": "in"
+  },
+  "dns_private_resolver_outbound_endpoint": {
+    "dashes": true,
+    "max_length": 80,
+    "min_length": 1,
+    "regex": "^[a-zA-Z0-9][a-zA-Z0-9_-]*[a-zA-Z0-9]$",
+    "resource_type": "Microsoft.Network/dnsResolvers/outboundEndpoints",
+    "scope": "DNS resolver",
+    "slug": "out"
+  },
+  "document_intelligence": {
+    "dashes": true,
+    "max_length": 64,
+    "min_length": 2,
+    "regex": "^[a-zA-Z0-9-][a-zA-Z0-9-]{0,62}[a-zA-Z0-9-]$",
+    "resource_type": "Microsoft.CognitiveServices/accounts",
+    "scope": "resource group",
+    "slug": "di"
+  },
+  "event_grid_domain": {
+    "dashes": true,
+    "max_length": 50,
+    "min_length": 3,
+    "regex": "^[a-zA-Z0-9-][a-zA-Z0-9-]{1,48}[a-zA-Z0-9-]$",
+    "resource_type": "Microsoft.EventGrid/domains",
+    "scope": "resource group",
+    "slug": "evgd"
+  },
+  "event_grid_namespace": {
+    "dashes": true,
+    "max_length": 50,
+    "min_length": 3,
+    "regex": "^[a-zA-Z0-9][a-zA-Z0-9-]*[a-zA-Z0-9]$",
+    "resource_type": "Microsoft.EventGrid/namespaces",
+    "scope": "resource group",
+    "slug": "evgns"
+  },
+  "event_grid_subscriptions": {
+    "dashes": true,
+    "max_length": 64,
+    "min_length": 3,
+    "regex": "^[a-zA-Z0-9-][a-zA-Z0-9-]{1,62}[a-zA-Z0-9-]$",
+    "resource_type": "Microsoft.EventGrid/eventSubscriptions",
+    "scope": "resource group",
+    "slug": "evgs"
+  },
+  "event_grid_system_topic": {
+    "dashes": true,
+    "max_length": 128,
+    "min_length": 3,
+    "regex": "^[a-zA-Z0-9][a-zA-Z0-9-]*[a-zA-Z0-9]$",
+    "resource_type": "Microsoft.EventGrid/systemTopics",
+    "scope": "resource group",
+    "slug": "egst"
+  },
+  "event_grid_topic": {
+    "dashes": true,
+    "max_length": 50,
+    "min_length": 3,
+    "regex": "^[a-zA-Z0-9][a-zA-Z0-9-]*[a-zA-Z0-9]$",
+    "resource_type": "Microsoft.EventGrid/domains/topics",
+    "scope": "domain",
+    "slug": "evgt"
+  },
+  "event_hub": {
+    "dashes": true,
+    "max_length": 256,
+    "min_length": 1,
+    "regex": "^[a-zA-Z0-9][a-zA-Z0-9._-]*[a-zA-Z0-9]$",
+    "resource_type": "Microsoft.EventHub/namespaces/eventHubs",
+    "scope": "namespace",
+    "slug": "evh"
+  },
+  "event_hubs_namespace": {
+    "dashes": true,
+    "max_length": 50,
+    "min_length": 6,
+    "regex": "^[a-zA-Z][a-zA-Z0-9-]{4,48}[a-zA-Z0-9-]$",
+    "resource_type": "Microsoft.EventHub/namespaces",
+    "scope": "global",
+    "slug": "evhns"
+  },
+  "expressroute_circuit": {
+    "dashes": true,
+    "max_length": 80,
+    "min_length": 1,
+    "regex": "^[a-zA-Z0-9-_.]$|^[a-zA-Z0-9-_.][a-zA-Z0-9-_.]*[a-zA-Z0-9-_.]$",
+    "resource_type": "Microsoft.Network/expressRouteCircuits",
+    "scope": "resource group",
+    "slug": "erc"
+  },
+  "expressroute_direct": {
+    "dashes": true,
+    "max_length": 80,
+    "min_length": 1,
+    "regex": "^[a-zA-Z0-9][a-zA-Z0-9_.-]*[a-zA-Z0-9_]$",
+    "resource_type": "Microsoft.Network/expressRoutePorts",
+    "scope": "resource group",
+    "slug": "erd"
+  },
+  "expressroute_gateway": {
+    "dashes": true,
+    "max_length": 80,
+    "min_length": 1,
+    "regex": "^[a-zA-Z0-9-_.]$|^[a-zA-Z0-9-_.][a-zA-Z0-9-_.]*[a-zA-Z0-9-_.]$",
+    "resource_type": "Microsoft.Network/virtualNetworkGateways",
+    "scope": "resource group",
+    "slug": "ergw"
+  },
+  "fabric_capacity": {
+    "dashes": false,
+    "max_length": 63,
+    "min_length": 3,
+    "regex": "^[a-z][a-z0-9]*$",
+    "resource_type": "Microsoft.Fabric/capacities",
+    "scope": "region",
+    "slug": "fc"
+  },
+  "face_api": {
+    "dashes": true,
+    "max_length": 64,
+    "min_length": 2,
+    "regex": "^[a-zA-Z0-9-][a-zA-Z0-9-]{0,62}[a-zA-Z0-9-]$",
+    "resource_type": "Microsoft.CognitiveServices/accounts",
+    "scope": "resource group",
+    "slug": "face"
+  },
+  "file_share": {
+    "dashes": true,
+    "max_length": 63,
+    "min_length": 3,
+    "regex": "^[a-zA-Z0-9-][a-zA-Z0-9-]{1,61}[a-zA-Z0-9-]$",
+    "resource_type": "Microsoft.Storage/storageAccounts/fileServices/shares",
+    "scope": "global",
+    "slug": "share"
+  },
+  "firewall": {
+    "dashes": true,
+    "max_length": 80,
+    "min_length": 1,
+    "regex": "^[a-zA-Z0-9-_.]$|^[a-zA-Z0-9-_.][a-zA-Z0-9-_.]*[a-zA-Z0-9-_.]$",
+    "resource_type": "Microsoft.Network/azureFirewalls",
+    "scope": "resource group",
+    "slug": "afw"
+  },
+  "firewall_policy": {
+    "dashes": true,
+    "max_length": 80,
+    "min_length": 1,
+    "regex": "^[a-zA-Z0-9-_.]$|^[a-zA-Z0-9-_.][a-zA-Z0-9-_.]*[a-zA-Z0-9-_.]$",
+    "resource_type": "Microsoft.Network/firewallPolicies",
+    "scope": "resource group",
+    "slug": "afwp"
+  },
+  "foundry_account": {
+    "dashes": true,
+    "max_length": 64,
+    "min_length": 2,
+    "regex": "^[a-zA-Z0-9-][a-zA-Z0-9-]{0,62}[a-zA-Z0-9-]$",
+    "resource_type": "Microsoft.CognitiveServices/accounts",
+    "scope": "resource group",
+    "slug": "aif"
+  },
+  "foundry_account_project": {
+    "dashes": true,
+    "max_length": 64,
+    "min_length": 2,
+    "regex": "^[a-zA-Z0-9][a-zA-Z0-9-]*[a-zA-Z0-9]$",
+    "resource_type": "Microsoft.CognitiveServices/accounts/projects",
+    "scope": "account",
+    "slug": "proj"
+  },
+  "foundry_hub": {
+    "dashes": true,
+    "max_length": 33,
+    "min_length": 3,
+    "regex": "^[a-zA-Z0-9-_][a-zA-Z0-9-_]{1,31}[a-zA-Z0-9-_]$",
+    "resource_type": "Microsoft.MachineLearningServices/workspaces",
+    "scope": "resource group",
+    "slug": "hub"
+  },
+  "foundry_hub_project": {
+    "dashes": true,
+    "max_length": 33,
+    "min_length": 3,
+    "regex": "^[a-zA-Z0-9-_][a-zA-Z0-9-_]{1,31}[a-zA-Z0-9-_]$",
+    "resource_type": "Microsoft.MachineLearningServices/workspaces",
+    "scope": "resource group",
+    "slug": "proj"
+  },
+  "foundry_tools": {
+    "dashes": true,
+    "max_length": 64,
+    "min_length": 2,
+    "regex": "^[a-zA-Z0-9-][a-zA-Z0-9-]{0,62}[a-zA-Z0-9-]$",
+    "resource_type": "Microsoft.CognitiveServices/accounts",
+    "scope": "resource group",
+    "slug": "ais"
+  },
+  "front_door": {
+    "dashes": true,
+    "max_length": 64,
+    "min_length": 5,
+    "regex": "^[a-zA-Z0-9-][a-zA-Z0-9-]{3,62}[a-zA-Z0-9-]$",
+    "resource_type": "Microsoft.Network/frontDoors",
+    "scope": "global",
+    "slug": "afd"
+  },
+  "front_door_endpoint": {
+    "dashes": true,
+    "max_length": 46,
+    "min_length": 1,
+    "regex": "^[a-zA-Z0-9][a-zA-Z0-9-]*[a-zA-Z0-9]$",
+    "resource_type": "Microsoft.Cdn/profiles/afdEndpoints",
+    "scope": "global",
+    "slug": "fde"
+  },
+  "front_door_firewall_policy": {
+    "dashes": false,
+    "max_length": 128,
+    "min_length": 1,
+    "regex": "^[a-zA-Z][a-zA-Z0-9]{0,127}$",
+    "resource_type": "Microsoft.Network/frontdoorWebApplicationFirewallPolicies",
+    "scope": "resource group",
+    "slug": "fdfp"
+  },
+  "front_door_profile": {
+    "dashes": true,
+    "max_length": 260,
+    "min_length": 1,
+    "regex": "^[a-zA-Z0-9-]$|^[a-zA-Z0-9-][a-zA-Z0-9-]*[a-zA-Z0-9-]$",
+    "resource_type": "Microsoft.Cdn/profiles",
+    "scope": "resource group",
+    "slug": "afd"
+  },
+  "function_app": {
+    "dashes": true,
+    "max_length": 60,
+    "min_length": 2,
+    "regex": "^[a-zA-Z0-9-][a-zA-Z0-9-]{0,58}[a-zA-Z0-9-]$",
+    "resource_type": "Microsoft.Web/sites",
+    "scope": "global or per domain; see note below.",
+    "slug": "func"
+  },
+  "gallery": {
+    "dashes": false,
+    "max_length": 80,
+    "min_length": 1,
+    "regex": "^[a-zA-Z0-9][a-zA-Z0-9_.]{0,78}[a-zA-Z0-9]$",
+    "resource_type": "Microsoft.Compute/galleries",
+    "scope": "resource group",
+    "slug": "gal"
+  },
+  "hdinsight_hadoop_cluster": {
+    "dashes": true,
+    "max_length": 59,
+    "min_length": 3,
+    "regex": "^[a-zA-Z0-9-][a-zA-Z0-9-]{1,57}[a-zA-Z0-9-]$",
+    "resource_type": "Microsoft.HDInsight/clusters",
+    "scope": "global",
+    "slug": "hadoop"
+  },
+  "hdinsight_hbase_cluster": {
+    "dashes": true,
+    "max_length": 59,
+    "min_length": 3,
+    "regex": "^[a-zA-Z0-9-][a-zA-Z0-9-]{1,57}[a-zA-Z0-9-]$",
+    "resource_type": "Microsoft.HDInsight/clusters",
+    "scope": "global",
+    "slug": "hbase"
+  },
+  "hdinsight_kafka_cluster": {
+    "dashes": true,
+    "max_length": 59,
+    "min_length": 3,
+    "regex": "^[a-zA-Z0-9-][a-zA-Z0-9-]{1,57}[a-zA-Z0-9-]$",
+    "resource_type": "Microsoft.HDInsight/clusters",
+    "scope": "global",
+    "slug": "kafka"
+  },
+  "hdinsight_ml_services_cluster": {
+    "dashes": true,
+    "max_length": 59,
+    "min_length": 3,
+    "regex": "^[a-zA-Z0-9-][a-zA-Z0-9-]{1,57}[a-zA-Z0-9-]$",
+    "resource_type": "Microsoft.HDInsight/clusters",
+    "scope": "global",
+    "slug": "mls"
+  },
+  "hdinsight_spark_cluster": {
+    "dashes": true,
+    "max_length": 59,
+    "min_length": 3,
+    "regex": "^[a-zA-Z0-9-][a-zA-Z0-9-]{1,57}[a-zA-Z0-9-]$",
+    "resource_type": "Microsoft.HDInsight/clusters",
+    "scope": "global",
+    "slug": "spark"
+  },
+  "hdinsight_storm_cluster": {
+    "dashes": true,
+    "max_length": 59,
+    "min_length": 3,
+    "regex": "^[a-zA-Z0-9-][a-zA-Z0-9-]{1,57}[a-zA-Z0-9-]$",
+    "resource_type": "Microsoft.HDInsight/clusters",
+    "scope": "global",
+    "slug": "storm"
+  },
+  "health_insights": {
+    "dashes": true,
+    "max_length": 64,
+    "min_length": 2,
+    "regex": "^[a-zA-Z0-9-][a-zA-Z0-9-]{0,62}[a-zA-Z0-9-]$",
+    "resource_type": "Microsoft.CognitiveServices/accounts",
+    "scope": "resource group",
+    "slug": "hi"
+  },
+  "hosting_environment": {
+    "dashes": true,
+    "max_length": 36,
+    "min_length": 1,
+    "regex": "^[a-zA-Z0-9][a-zA-Z0-9-]*[a-zA-Z0-9]$",
+    "resource_type": "Microsoft.Web/hostingEnvironments",
+    "scope": "resource group",
+    "slug": "host"
+  },
+  "image_template": {
+    "dashes": true,
+    "max_length": 64,
+    "min_length": 1,
+    "regex": "^[a-zA-Z0-9][a-zA-Z0-9_.-]*[a-zA-Z0-9]$",
+    "resource_type": "Microsoft.VirtualMachineImages/imageTemplates",
+    "scope": "resource group",
+    "slug": "it"
+  },
+  "immersive_reader": {
+    "dashes": true,
+    "max_length": 64,
+    "min_length": 2,
+    "regex": "^[a-zA-Z0-9-][a-zA-Z0-9-]{0,62}[a-zA-Z0-9-]$",
+    "resource_type": "Microsoft.CognitiveServices/accounts",
+    "scope": "resource group",
+    "slug": "ir"
+  },
+  "integration_account": {
+    "dashes": true,
+    "max_length": 80,
+    "min_length": 1,
+    "regex": "^[a-zA-Z0-9-_.]$|^[a-zA-Z0-9-_.][a-zA-Z0-9-_.]*[a-zA-Z0-9-_.]$",
+    "resource_type": "Microsoft.Logic/integrationAccounts",
+    "scope": "resource group",
+    "slug": "ia"
+  },
+  "iot_hub": {
+    "dashes": true,
+    "max_length": 50,
+    "min_length": 3,
+    "regex": "^[a-zA-Z0-9-][a-zA-Z0-9-]{1,48}[a-zA-Z0-9_]$",
+    "resource_type": "Microsoft.Devices/IotHubs",
+    "scope": "global",
+    "slug": "iot"
+  },
+  "ip_group": {
+    "dashes": true,
+    "max_length": 80,
+    "min_length": 1,
+    "regex": "^[a-zA-Z0-9][a-zA-Z0-9_.-]*[a-zA-Z0-9_]$",
+    "resource_type": "Microsoft.Network/ipGroups",
+    "scope": "resource group",
+    "slug": "ipg"
+  },
+  "key_vault": {
+    "dashes": true,
+    "max_length": 24,
+    "min_length": 3,
+    "regex": "^[a-zA-Z][a-zA-Z0-9-]{1,22}[a-zA-Z0-9]$",
+    "resource_type": "Microsoft.KeyVault/vaults",
+    "scope": "global",
+    "slug": "kv"
+  },
+  "key_vault_managed_hsm": {
+    "dashes": true,
+    "max_length": 24,
+    "min_length": 3,
+    "regex": "^[a-zA-Z][a-zA-Z0-9-]*[a-zA-Z0-9]$",
+    "resource_type": "Microsoft.KeyVault/managedHSMs",
+    "scope": "global",
+    "slug": "kvmhsm"
+  },
+  "language_service": {
+    "dashes": true,
+    "max_length": 64,
+    "min_length": 2,
+    "regex": "^[a-zA-Z0-9-][a-zA-Z0-9-]{0,62}[a-zA-Z0-9-]$",
+    "resource_type": "Microsoft.CognitiveServices/accounts",
+    "scope": "resource group",
+    "slug": "lang"
+  },
+  "load_balancer": {
+    "dashes": true,
+    "max_length": 80,
+    "min_length": 1,
+    "regex": "^[a-zA-Z0-9-_.]$|^[a-zA-Z0-9-_.][a-zA-Z0-9-_.]*[a-zA-Z0-9-_.]$",
+    "resource_type": "Microsoft.Network/loadBalancers",
+    "scope": "resource group",
+    "slug": "lbe"
+  },
+  "load_balancer_external": {
+    "dashes": true,
+    "max_length": 80,
+    "min_length": 1,
+    "regex": "^[a-zA-Z0-9][a-zA-Z0-9_.-]*[a-zA-Z0-9_]$",
+    "resource_type": "Microsoft.Network/loadBalancers",
+    "scope": "resource group",
+    "slug": "lbe"
+  },
+  "load_balancer_internal": {
+    "dashes": true,
+    "max_length": 80,
+    "min_length": 1,
+    "regex": "^[a-zA-Z0-9][a-zA-Z0-9_.-]*[a-zA-Z0-9_]$",
+    "resource_type": "Microsoft.Network/loadBalancers",
+    "scope": "resource group",
+    "slug": "lbi"
+  },
+  "load_balancer_rule": {
+    "dashes": true,
+    "max_length": 80,
+    "min_length": 1,
+    "regex": "^[a-zA-Z0-9][a-zA-Z0-9_.-]*[a-zA-Z0-9_]$",
+    "resource_type": "Microsoft.Network/loadBalancers/inboundNatRules",
+    "scope": "load balancer",
+    "slug": "rule"
+  },
+  "local_network_gateway": {
+    "dashes": true,
+    "max_length": 80,
+    "min_length": 1,
+    "regex": "^[a-zA-Z0-9-_.]$|^[a-zA-Z0-9-_.][a-zA-Z0-9-_.]*[a-zA-Z0-9-_.]$",
+    "resource_type": "Microsoft.Network/localNetworkGateways",
+    "scope": "resource group",
+    "slug": "lgw"
+  },
+  "log_analytics_query_packs": {
+    "dashes": true,
+    "max_length": 63,
+    "min_length": 1,
+    "regex": "^[a-zA-Z0-9][a-zA-Z0-9_.-]*[a-zA-Z0-9]$",
+    "resource_type": "Microsoft.OperationalInsights/querypacks",
+    "scope": "resource group",
+    "slug": "pack"
+  },
+  "log_analytics_workspace": {
+    "dashes": true,
+    "max_length": 63,
+    "min_length": 4,
+    "regex": "^[a-zA-Z0-9-][a-zA-Z0-9-]{2,61}[a-zA-Z0-9-]$",
+    "resource_type": "Microsoft.OperationalInsights/workspaces",
+    "scope": "resource group",
+    "slug": "log"
+  },
+  "logic_app": {
+    "dashes": true,
+    "max_length": 43,
+    "min_length": 1,
+    "regex": "^[a-zA-Z0-9-_.]$|^[a-zA-Z0-9-_.][a-zA-Z0-9-_.]*[a-zA-Z0-9-_.]$",
+    "resource_type": "Microsoft.Logic/workflows",
+    "scope": "resource group",
+    "slug": "logic"
+  },
+  "managed_devops_pools": {
+    "dashes": true,
+    "max_length": 63,
+    "min_length": 1,
+    "regex": "^[a-zA-Z0-9][a-zA-Z0-9_.-]*[a-zA-Z0-9]$",
+    "resource_type": "Microsoft.DevOpsInfrastructure/pools",
+    "scope": "resource group",
+    "slug": "mdp"
+  },
+  "managed_disk": {
+    "dashes": true,
+    "max_length": 80,
+    "min_length": 1,
+    "regex": "^[a-zA-Z0-9-_]$|^[a-zA-Z0-9-_][a-zA-Z0-9-_]*[a-zA-Z0-9-_]$",
+    "resource_type": "Microsoft.Compute/disks",
+    "scope": "resource group",
+    "slug": "disk"
+  },
+  "managed_identity": {
+    "dashes": true,
+    "max_length": 128,
+    "min_length": 3,
+    "regex": "^[a-zA-Z][a-zA-Z0-9-_]{1,126}[a-zA-Z0-9-_]$",
+    "resource_type": "Microsoft.ManagedIdentity/userAssignedIdentities",
+    "scope": "resource group",
+    "slug": "id"
+  },
+  "management_group": {
+    "dashes": true,
+    "max_length": 90,
+    "min_length": 1,
+    "regex": "^[a-zA-Z]$|^[a-zA-Z][a-zA-Z0-9-_.]*[a-zA-Z0-9_]$",
+    "resource_type": "Microsoft.Management/managementGroups",
+    "scope": "tenant",
+    "slug": "mg"
+  },
+  "maps_account": {
+    "dashes": true,
+    "max_length": 98,
+    "min_length": 1,
+    "regex": "^[a-zA-Z0-9-_.]$|^[a-zA-Z0-9-_.][a-zA-Z0-9-_.]*[a-zA-Z0-9-_.]$",
+    "resource_type": "Microsoft.Maps/accounts",
+    "scope": "resource group",
+    "slug": "map"
+  },
+  "microsoft_purview_instance": {
+    "dashes": true,
+    "max_length": 63,
+    "min_length": 3,
+    "regex": "^[a-zA-Z0-9][a-zA-Z0-9-]*[a-zA-Z0-9]$",
+    "resource_type": "Microsoft.Purview/accounts",
+    "scope": "global",
+    "slug": "pview"
+  },
+  "mysql_database": {
+    "dashes": true,
+    "max_length": 63,
+    "min_length": 3,
+    "regex": "^[a-zA-Z0-9-][a-zA-Z0-9-]{1,61}[a-zA-Z0-9-]$",
+    "resource_type": "Microsoft.DBforMySQL/servers",
+    "scope": "global",
+    "slug": "mysql"
+  },
+  "nat_gateway": {
+    "dashes": true,
+    "max_length": 80,
+    "min_length": 1,
+    "regex": "^[a-zA-Z0-9][a-zA-Z0-9_.-]*[a-zA-Z0-9_]$",
+    "resource_type": "Microsoft.Network/natGateways",
+    "scope": "resource group",
+    "slug": "ng"
+  },
+  "network_interface": {
+    "dashes": true,
+    "max_length": 80,
+    "min_length": 1,
+    "regex": "^[a-zA-Z0-9-_.]$|^[a-zA-Z0-9-_.][a-zA-Z0-9-_.]*[a-zA-Z0-9-_.]$",
+    "resource_type": "Microsoft.Network/networkInterfaces",
+    "scope": "resource group",
+    "slug": "nic"
+  },
+  "network_security_group": {
+    "dashes": true,
+    "max_length": 80,
+    "min_length": 1,
+    "regex": "^[a-zA-Z0-9-_.]$|^[a-zA-Z0-9-_.][a-zA-Z0-9-_.]*[a-zA-Z0-9-_.]$",
+    "resource_type": "Microsoft.Network/networkSecurityGroups",
+    "scope": "resource group",
+    "slug": "nsg"
+  },
+  "network_security_group_security_rules": {
+    "dashes": true,
+    "max_length": 80,
+    "min_length": 1,
+    "regex": "^[a-zA-Z0-9][a-zA-Z0-9_.-]*[a-zA-Z0-9_]$",
+    "resource_type": "Microsoft.Network/networkSecurityGroups/securityRules",
+    "scope": "network security group",
+    "slug": "nsgsr"
+  },
+  "network_security_perimeter": {
+    "dashes": true,
+    "max_length": 80,
+    "min_length": 1,
+    "regex": "^[a-zA-Z0-9][a-zA-Z0-9_.-]*[a-zA-Z0-9_]$",
+    "resource_type": "Microsoft.Network/networkSecurityPerimeters",
+    "scope": "resource group",
+    "slug": "nsp"
+  },
+  "network_watcher": {
+    "dashes": true,
+    "max_length": 80,
+    "min_length": 1,
+    "regex": "^[a-zA-Z0-9-_.]$|^[a-zA-Z0-9-_.][a-zA-Z0-9-_.]*[a-zA-Z0-9-_.]$",
+    "resource_type": "Microsoft.Network/networkWatchers",
+    "scope": "resource group",
+    "slug": "nw"
+  },
+  "notification_hubs": {
+    "dashes": false,
+    "max_length": 64,
+    "min_length": 1,
+    "regex": "^[a-zA-Z]$|^[a-zA-Z][a-zA-Z0-9]*[a-zA-Z0-9]$",
+    "resource_type": "Microsoft.NotificationHubs/namespaces/notificationHubs",
+    "scope": "resource group",
+    "slug": "ntf"
+  },
+  "notification_hubs_namespace": {
+    "dashes": true,
+    "max_length": 50,
+    "min_length": 6,
+    "regex": "^[a-zA-Z][a-zA-Z0-9-]{4,48}[a-zA-Z0-9-]$",
+    "resource_type": "Microsoft.NotificationHubs/namespaces",
+    "scope": "global",
+    "slug": "ntfns"
+  },
+  "postgresql_flexible_server": {
+    "dashes": true,
+    "max_length": 63,
+    "min_length": 3,
+    "regex": "^[a-z0-9][a-z0-9-]*[a-z0-9]$",
+    "resource_type": "Microsoft.DBforPostgreSQL/flexibleServers",
+    "scope": "global",
+    "slug": "pgsql"
+  },
+  "power_bi_embedded": {
+    "dashes": false,
+    "max_length": 63,
+    "min_length": 3,
+    "regex": "^[a-z][a-z0-9]{2,62}$",
+    "resource_type": "Microsoft.PowerBIDedicated/capacities",
+    "scope": "region",
+    "slug": "pbi"
+  },
+  "private_endpoint": {
+    "dashes": true,
+    "max_length": 64,
+    "min_length": 2,
+    "regex": "^[a-zA-Z0-9-_.][a-zA-Z0-9-_.]{0,62}[a-zA-Z0-9-_.]$",
+    "resource_type": "Microsoft.Network/privateEndpoints",
+    "scope": "resource group",
+    "slug": "pep"
+  },
+  "private_link": {
+    "dashes": true,
+    "max_length": 64,
+    "min_length": 2,
+    "regex": "^[a-zA-Z0-9-_.][a-zA-Z0-9-_.]{0,62}[a-zA-Z0-9-_.]$",
+    "resource_type": "Microsoft.Network/privateLinkServices",
+    "scope": "resource group",
+    "slug": "pl"
+  },
+  "provisioning_services": {
+    "dashes": true,
+    "max_length": 64,
+    "min_length": 3,
+    "regex": "^[a-zA-Z0-9-][a-zA-Z0-9-]{1,62}[a-zA-Z0-9-]$",
+    "resource_type": "Microsoft.Devices/provisioningServices",
+    "scope": "resource group",
+    "slug": "provs"
+  },
+  "provisioning_services_certificate": {
+    "dashes": true,
+    "max_length": 50,
+    "min_length": 1,
+    "regex": "^[a-zA-Z]$|^[a-zA-Z][a-zA-Z0-9-]*[a-zA-Z0-9-]$",
+    "resource_type": "Microsoft.Devices/provisioningServices/certificates",
+    "scope": "global",
+    "slug": "pcert"
+  },
+  "proximity_placement_group": {
+    "dashes": true,
+    "max_length": 80,
+    "min_length": 1,
+    "regex": "^[a-zA-Z0-9][a-zA-Z0-9_.-]*[a-zA-Z0-9_]$",
+    "resource_type": "Microsoft.Compute/proximityPlacementGroups",
+    "scope": "resource group",
+    "slug": "ppg"
+  },
+  "public_ip_address": {
+    "dashes": true,
+    "max_length": 80,
+    "min_length": 1,
+    "regex": "^[a-zA-Z0-9-_.]$|^[a-zA-Z0-9-_.][a-zA-Z0-9-_.]*[a-zA-Z0-9-_.]$",
+    "resource_type": "Microsoft.Network/publicIPAddresses",
+    "scope": "resource group",
+    "slug": "pip"
+  },
+  "public_ip_address_prefix": {
+    "dashes": true,
+    "max_length": 80,
+    "min_length": 1,
+    "regex": "^[a-zA-Z0-9-_.]$|^[a-zA-Z0-9-_.][a-zA-Z0-9-_.]*[a-zA-Z0-9-_.]$",
+    "resource_type": "Microsoft.Network/publicIPPrefixes",
+    "scope": "resource group",
+    "slug": "ippre"
+  },
+  "recovery_services_vault": {
+    "dashes": true,
+    "max_length": 50,
+    "min_length": 2,
+    "regex": "^[a-zA-Z][a-zA-Z0-9-]{0,48}[a-zA-Z0-9-]$",
+    "resource_type": "Microsoft.RecoveryServices/vaults",
+    "scope": "resource group",
+    "slug": "rsv"
+  },
+  "resource_group": {
+    "dashes": true,
+    "max_length": 90,
+    "min_length": 1,
+    "regex": "^[a-zA-Z0-9-_.]$|^[a-zA-Z0-9-_.][a-zA-Z0-9-_.]*[a-zA-Z0-9_]$",
+    "resource_type": "Microsoft.Resources/resourceGroups",
+    "scope": "subscription",
+    "slug": "rg"
+  },
+  "restore_point_collection": {
+    "dashes": true,
+    "max_length": 80,
+    "min_length": 1,
+    "regex": "^[a-zA-Z0-9][a-zA-Z0-9_.-]*[a-zA-Z0-9_]$",
+    "resource_type": "Microsoft.Compute/restorePointCollections",
+    "scope": "resource group",
+    "slug": "rpc"
+  },
+  "route_filter": {
+    "dashes": true,
+    "max_length": 80,
+    "min_length": 1,
+    "regex": "^[a-zA-Z0-9-_.]$|^[a-zA-Z0-9-_.][a-zA-Z0-9-_.]*[a-zA-Z0-9-_.]$",
+    "resource_type": "Microsoft.Network/routeFilters",
+    "scope": "resource group",
+    "slug": "rf"
+  },
+  "route_server": {
+    "dashes": true,
+    "max_length": 80,
+    "min_length": 1,
+    "regex": "^[a-zA-Z0-9][a-zA-Z0-9_.-]*[a-zA-Z0-9_]$",
+    "resource_type": "Microsoft.Network/virtualHubs",
+    "scope": "resource group",
+    "slug": "rtserv"
+  },
+  "route_table": {
+    "dashes": true,
+    "max_length": 80,
+    "min_length": 1,
+    "regex": "^[a-zA-Z0-9-_.]$|^[a-zA-Z0-9-_.][a-zA-Z0-9-_.]*[a-zA-Z0-9-_.]$",
+    "resource_type": "Microsoft.Network/routeTables",
+    "scope": "resource group",
+    "slug": "rt"
+  },
+  "service_bus_namespace": {
+    "dashes": true,
+    "max_length": 50,
+    "min_length": 6,
+    "regex": "^[a-zA-Z][a-zA-Z0-9-]{4,48}[a-zA-Z0-9-]$",
+    "resource_type": "Microsoft.ServiceBus/namespaces",
+    "scope": "global",
+    "slug": "sbns"
+  },
+  "service_bus_queue": {
+    "dashes": true,
+    "max_length": 50,
+    "min_length": 1,
+    "regex": "^[a-zA-Z]$|^[a-zA-Z][a-zA-Z0-9-]*[a-zA-Z0-9-]$",
+    "resource_type": "Microsoft.ServiceBus/namespaces/queues",
+    "scope": "global",
+    "slug": "sbq"
+  },
+  "service_bus_topic": {
+    "dashes": true,
+    "max_length": 50,
+    "min_length": 1,
+    "regex": "^[a-zA-Z]$|^[a-zA-Z][a-zA-Z0-9-]*[a-zA-Z0-9-]$",
+    "resource_type": "Microsoft.ServiceBus/namespaces/topics",
+    "scope": "global",
+    "slug": "sbt"
+  },
+  "service_bus_topic_subscription": {
+    "dashes": true,
+    "max_length": 50,
+    "min_length": 1,
+    "regex": "^[a-zA-Z]$|^[a-zA-Z][a-zA-Z0-9-]*[a-zA-Z0-9-]$",
+    "resource_type": "Microsoft.ServiceBus/namespaces/topics/subscriptions",
+    "scope": "global",
+    "slug": "sbts"
+  },
+  "service_endpoint_policy": {
+    "dashes": true,
+    "max_length": 80,
+    "min_length": 1,
+    "regex": "^[a-zA-Z0-9-_.]$|^[a-zA-Z0-9-_.][a-zA-Z0-9-_.]*[a-zA-Z0-9-_.]$",
+    "resource_type": "Microsoft.Network/serviceEndPointPolicies",
+    "scope": "resource group",
+    "slug": "se"
+  },
+  "service_fabric_cluster": {
+    "dashes": true,
+    "max_length": 23,
+    "min_length": 4,
+    "regex": "^[a-zA-Z][a-zA-Z0-9-]{2,21}[a-zA-Z0-9-]$",
+    "resource_type": "Microsoft.ServiceFabric/clusters",
+    "scope": "region",
+    "slug": "sf"
+  },
+  "service_fabric_managed_cluster": {
+    "dashes": true,
+    "max_length": 50,
+    "min_length": 1,
+    "regex": "^[a-zA-Z]$|^[a-zA-Z][a-zA-Z0-9-]*[a-zA-Z0-9-]$",
+    "resource_type": "Microsoft.ServiceFabric/managedClusters",
+    "scope": "global",
+    "slug": "sfmc"
+  },
+  "signalr": {
+    "dashes": true,
+    "max_length": 63,
+    "min_length": 3,
+    "regex": "^[a-zA-Z][a-zA-Z0-9-]{1,61}[a-zA-Z0-9-]$",
+    "resource_type": "Microsoft.SignalRService/SignalR",
+    "scope": "global",
+    "slug": "sigr"
+  },
+  "snapshot": {
+    "dashes": true,
+    "max_length": 80,
+    "min_length": 1,
+    "regex": "^[a-zA-Z0-9-_.]$|^[a-zA-Z0-9-_.][a-zA-Z0-9-_.]*[a-zA-Z0-9-_.]$",
+    "resource_type": "Microsoft.Compute/snapshots",
+    "scope": "resource group",
+    "slug": "snap"
+  },
+  "speech_service": {
+    "dashes": true,
+    "max_length": 64,
+    "min_length": 2,
+    "regex": "^[a-zA-Z0-9-][a-zA-Z0-9-]{0,62}[a-zA-Z0-9-]$",
+    "resource_type": "Microsoft.CognitiveServices/accounts",
+    "scope": "resource group",
+    "slug": "spch"
+  },
+  "sql_managed_instance": {
+    "dashes": true,
+    "max_length": 63,
+    "min_length": 1,
+    "regex": "^[a-zA-Z0-9-]$|^[a-zA-Z0-9-][a-zA-Z0-9-]*[a-zA-Z0-9-]$",
+    "resource_type": "Microsoft.Sql/managedInstances",
+    "scope": "global",
+    "slug": "sqlmi"
+  },
+  "ssh_key": {
+    "dashes": true,
+    "max_length": 128,
+    "min_length": 1,
+    "regex": "^[a-zA-Z0-9][a-zA-Z0-9_.-]*[a-zA-Z0-9_]$",
+    "resource_type": "Microsoft.Compute/sshPublicKeys",
+    "scope": "resource group",
+    "slug": "sshkey"
+  },
+  "static_web_app": {
+    "dashes": true,
+    "max_length": 60,
+    "min_length": 2,
+    "regex": "^[a-zA-Z0-9][a-zA-Z0-9-]*[a-zA-Z0-9]$",
+    "resource_type": "Microsoft.Web/staticSites",
+    "scope": "resource group",
+    "slug": "stapp"
+  },
+  "storage_account": {
+    "dashes": false,
+    "max_length": 24,
+    "min_length": 3,
+    "regex": "^[a-z0-9]{3,24}$",
+    "resource_type": "Microsoft.Storage/storageAccounts",
+    "scope": "global",
+    "slug": "st"
+  },
+  "storage_sync_service_name": {
+    "dashes": true,
+    "max_length": 60,
+    "min_length": 1,
+    "regex": "^[a-zA-Z0-9][a-zA-Z0-9_.-]*[a-zA-Z0-9]$",
+    "resource_type": "Microsoft.StorageSync/storageSyncServices",
+    "scope": "resource group",
+    "slug": "sss"
+  },
+  "template_specs_name": {
+    "dashes": true,
+    "max_length": 90,
+    "min_length": 1,
+    "regex": "^[a-zA-Z0-9-_.]$|^[a-zA-Z0-9-_.][a-zA-Z0-9-_.]*[a-zA-Z0-9-_.]$",
+    "resource_type": "Microsoft.Resources/templateSpecs",
+    "scope": "resource group",
+    "slug": "ts"
+  },
+  "time_series_insights_environment": {
+    "dashes": false,
+    "max_length": 90,
+    "min_length": 1,
+    "regex": "^.{1,90}$",
+    "resource_type": "Microsoft.TimeSeriesInsights/environments",
+    "scope": "resource group",
+    "slug": "tsi"
+  },
+  "traffic_manager_profile": {
+    "dashes": true,
+    "max_length": 63,
+    "min_length": 1,
+    "regex": "^[a-zA-Z0-9-.]$|^[a-zA-Z0-9-.][a-zA-Z0-9-.]*[a-zA-Z0-9-.]$",
+    "resource_type": "Microsoft.Network/trafficManagerProfiles",
+    "scope": "global",
+    "slug": "traf"
+  },
+  "translator": {
+    "dashes": true,
+    "max_length": 64,
+    "min_length": 2,
+    "regex": "^[a-zA-Z0-9-][a-zA-Z0-9-]{0,62}[a-zA-Z0-9-]$",
+    "resource_type": "Microsoft.CognitiveServices/accounts",
+    "scope": "resource group",
+    "slug": "trsl"
+  },
+  "user_defined_route": {
+    "dashes": true,
+    "max_length": 80,
+    "min_length": 1,
+    "regex": "^[a-zA-Z0-9][a-zA-Z0-9_.-]*[a-zA-Z0-9_]$",
+    "resource_type": "Microsoft.Network/routeTables/routes",
+    "scope": "route table",
+    "slug": "udr"
+  },
+  "virtual_desktop_application_group": {
+    "dashes": true,
+    "max_length": 64,
+    "min_length": 3,
+    "regex": "^[a-zA-Z][a-zA-Z0-9-_.]{1,62}[a-zA-Z0-9-_.]$",
+    "resource_type": "Microsoft.DesktopVirtualization/applicationGroups",
+    "scope": "resource group",
+    "slug": "vdag"
+  },
+  "virtual_desktop_host_pool": {
+    "dashes": true,
+    "max_length": 64,
+    "min_length": 3,
+    "regex": "^[a-zA-Z][a-zA-Z0-9-_.]{1,62}[a-zA-Z0-9-_.]$",
+    "resource_type": "Microsoft.DesktopVirtualization/hostPools",
+    "scope": "resource group",
+    "slug": "vdpool"
+  },
+  "virtual_desktop_scaling_plan": {
+    "dashes": true,
+    "max_length": 64,
+    "min_length": 3,
+    "regex": "^[a-zA-Z0-9][a-zA-Z0-9_.-]*[a-zA-Z0-9_]$",
+    "resource_type": "Microsoft.DesktopVirtualization/scalingPlans",
+    "scope": "resource group",
+    "slug": "vdscaling"
+  },
+  "virtual_desktop_workspace": {
+    "dashes": true,
+    "max_length": 64,
+    "min_length": 3,
+    "regex": "^[a-zA-Z][a-zA-Z0-9-_.]{1,62}[a-zA-Z0-9-_.]$",
+    "resource_type": "Microsoft.DesktopVirtualization/workspaces",
+    "scope": "resource group",
+    "slug": "vdws"
+  },
+  "virtual_machine": {
+    "dashes": true,
+    "max_length": 15,
+    "min_length": 1,
+    "regex": "^[a-zA-Z0-9][a-zA-Z0-9-]{0,13}[a-zA-Z0-9]$",
+    "resource_type": "Microsoft.Compute/virtualMachines",
+    "scope": "resource group",
+    "slug": "vm"
+  },
+  "virtual_machine_maintenance_configuration": {
+    "dashes": true,
+    "max_length": 63,
+    "min_length": 1,
+    "regex": "^[a-zA-Z0-9][a-zA-Z0-9_.-]*[a-zA-Z0-9]$",
+    "resource_type": "Microsoft.Maintenance/maintenanceConfigurations",
+    "scope": "resource group",
+    "slug": "mc"
+  },
+  "virtual_machine_scale_set": {
+    "dashes": true,
+    "max_length": 15,
+    "min_length": 1,
+    "regex": "^[a-zA-Z0-9][a-zA-Z0-9-]{0,13}[a-zA-Z0-9]$",
+    "resource_type": "Microsoft.Compute/virtualMachineScaleSets",
+    "scope": "resource group",
+    "slug": "vmss"
+  },
+  "virtual_network": {
+    "dashes": true,
+    "max_length": 64,
+    "min_length": 2,
+    "regex": "^[a-zA-Z0-9-_.][a-zA-Z0-9-_.]{0,62}[a-zA-Z0-9-_.]$",
+    "resource_type": "Microsoft.Network/virtualNetworks",
+    "scope": "resource group",
+    "slug": "vnet"
+  },
+  "virtual_network_gateway": {
+    "dashes": true,
+    "max_length": 80,
+    "min_length": 1,
+    "regex": "^[a-zA-Z0-9-_.]$|^[a-zA-Z0-9-_.][a-zA-Z0-9-_.]*[a-zA-Z0-9-_.]$",
+    "resource_type": "Microsoft.Network/virtualNetworkGateways",
+    "scope": "resource group",
+    "slug": "vgw"
+  },
+  "virtual_network_manager": {
+    "dashes": true,
+    "max_length": 64,
+    "min_length": 1,
+    "regex": "^[a-zA-Z0-9][a-zA-Z0-9_.-]*[a-zA-Z0-9_]$",
+    "resource_type": "Microsoft.Network/networkManagers",
+    "scope": "resource group",
+    "slug": "vnm"
+  },
+  "virtual_network_peering": {
+    "dashes": true,
+    "max_length": 80,
+    "min_length": 1,
+    "regex": "^[a-zA-Z0-9][a-zA-Z0-9_.-]*[a-zA-Z0-9_]$",
+    "resource_type": "Microsoft.Network/virtualNetworks/virtualNetworkPeerings",
+    "scope": "virtual network",
+    "slug": "peer"
+  },
+  "virtual_network_subnet": {
+    "dashes": true,
+    "max_length": 80,
+    "min_length": 1,
+    "regex": "^[a-zA-Z0-9][a-zA-Z0-9_.-]*[a-zA-Z0-9_]$",
+    "resource_type": "Microsoft.Network/virtualNetworks/subnets",
+    "scope": "virtual network",
+    "slug": "snet"
+  },
+  "virtual_wan": {
+    "dashes": true,
+    "max_length": 80,
+    "min_length": 1,
+    "regex": "^[a-zA-Z0-9-_.]$|^[a-zA-Z0-9-_.][a-zA-Z0-9-_.]*[a-zA-Z0-9-_.]$",
+    "resource_type": "Microsoft.Network/virtualWans",
+    "scope": "resource group",
+    "slug": "vwan"
+  },
+  "virtual_wan_hub": {
+    "dashes": true,
+    "max_length": 80,
+    "min_length": 1,
+    "regex": "^[a-zA-Z0-9][a-zA-Z0-9_.-]*[a-zA-Z0-9_]$",
+    "resource_type": "Microsoft.Network/virtualHubs",
+    "scope": "resource group",
+    "slug": "vhub"
+  },
+  "vm_storage_account": {
+    "dashes": false,
+    "max_length": 24,
+    "min_length": 3,
+    "regex": "^[a-z0-9]{3,24}$",
+    "resource_type": "Microsoft.Storage/storageAccounts",
+    "scope": "global",
+    "slug": "stvm"
+  },
+  "vpn_connection": {
+    "dashes": true,
+    "max_length": 80,
+    "min_length": 1,
+    "regex": "^[a-zA-Z0-9][a-zA-Z0-9_.-]*[a-zA-Z0-9_]$",
+    "resource_type": "Microsoft.Network/vpnGateways/vpnConnections",
+    "scope": "VPN gateway",
+    "slug": "vcn"
+  },
+  "vpn_gateway": {
+    "dashes": true,
+    "max_length": 80,
+    "min_length": 1,
+    "regex": "^[a-zA-Z0-9-_.]$|^[a-zA-Z0-9-_.][a-zA-Z0-9-_.]*[a-zA-Z0-9-_.]$",
+    "resource_type": "Microsoft.Network/vpnGateways",
+    "scope": "resource group",
+    "slug": "vpng"
+  },
+  "vpn_site": {
+    "dashes": true,
+    "max_length": 80,
+    "min_length": 1,
+    "regex": "^[a-zA-Z0-9][a-zA-Z0-9_.-]*[a-zA-Z0-9_]$",
+    "resource_type": "Microsoft.Network/vpnGateways/vpnSites",
+    "scope": "resource group",
+    "slug": "vst"
+  },
+  "web_app": {
+    "dashes": true,
+    "max_length": 60,
+    "min_length": 2,
+    "regex": "^[a-zA-Z0-9-][a-zA-Z0-9-]{0,58}[a-zA-Z0-9-]$",
+    "resource_type": "Microsoft.Web/sites",
+    "scope": "global or per domain; see note below.",
+    "slug": "app"
+  },
+  "web_application_firewall_policy": {
+    "dashes": true,
+    "max_length": 80,
+    "min_length": 1,
+    "regex": "^[a-zA-Z0-9-_.]$|^[a-zA-Z0-9-_.][a-zA-Z0-9-_.]*[a-zA-Z0-9-_.]$",
+    "resource_type": "Microsoft.Network/firewallPolicies",
+    "scope": "resource group",
+    "slug": "waf"
+  },
+  "web_application_firewall_policy_rule_group": {
+    "dashes": true,
+    "max_length": 80,
+    "min_length": 1,
+    "regex": "^[a-zA-Z0-9][a-zA-Z0-9_.-]*[a-zA-Z0-9_]$",
+    "resource_type": "Microsoft.Network/firewallPolicies/ruleGroups",
+    "scope": "firewall policy",
+    "slug": "wafrg"
+  },
+  "webpubsub": {
+    "dashes": true,
+    "max_length": 63,
+    "min_length": 3,
+    "regex": "^[a-zA-Z][a-zA-Z0-9-]*[a-zA-Z0-9]$",
+    "resource_type": "Microsoft.SignalRService/webPubSub",
+    "scope": "global",
+    "slug": "wps"
+  }
+}

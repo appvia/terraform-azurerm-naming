@@ -4,5 +4,7 @@ terraform {
 
 module "naming" {
   source = "../../"
-  suffix = ["dev", "uks"]
+
+  suffix       = ["development", "uksouth"]
+  suffix_short = ["dev", "uks"]
 }
