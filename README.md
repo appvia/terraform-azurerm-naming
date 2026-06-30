@@ -7,7 +7,7 @@
   ***** CAUTION: Banner URLs are managed by scripts/init-from-template.sh ******
 -->
 
-![Github Actions](../../actions/workflows/terraform.yml/badge.svg)
+![Github Actions](https://github.com/appvia/terraform-azurerm-naming/actions/workflows/terraform.yml/badge.svg)
 
 # Terraform Azurerm Naming
 
