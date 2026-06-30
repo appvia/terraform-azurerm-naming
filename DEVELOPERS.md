@@ -175,9 +175,64 @@ Configuration: `.github/workflows/terraform.yml`
 
 Configuration: `.github/workflows/release.yml`
 
-- Triggers on version tags (`v*`)
-- Uses the shared `appvia/appvia-cicd-workflows` reusable workflow for GitHub releases
-- Create a release by tagging: `git tag v1.0.0 && git push --tags`
+Releases are **not** triggered by merging to `main`. Once your PR is merged, you must create and push a version tag to trigger the release pipeline:
+
+```bash
+git checkout main && git pull
+git tag v1.0.0
+git push origin v1.0.0
+```
+
+The workflow uses the shared [`appvia/appvia-cicd-workflows`](https://github.com/appvia/appvia-cicd-workflows) reusable workflow, which:
+
+1. Checks out the full repository history.
+2. Identifies the previous version tag.
+3. Creates a GitHub Release titled `Release <tag>` with auto-generated release notes covering all changes since the last tag.
+
+Tags must follow [semantic versioning](https://semver.org/) prefixed with `v` (e.g. `v1.0.0`, `v0.2.1`).
+
+#### Customising Release Notes with git-cliff
+
+By default the workflow uses GitHub's built-in release notes (based on PR titles and labels). For more control, you can enable [git-cliff](https://git-cliff.org/):
+
+1. Pass `enable-cliff: true` to the reusable workflow in `.github/workflows/release.yml`:
+
+   ```yaml
+   jobs:
+     release:
+       uses: appvia/appvia-cicd-workflows/.github/workflows/terraform-module-release.yml@v0.0.11
+       name: GitHub Release
+       with:
+         enable-cliff: true
+   ```
+
+2. Create a `.cliff/cliff.toml` configuration file in the repository root. This controls how commits are parsed, grouped, and rendered in the changelog. See the [git-cliff documentation](https://git-cliff.org/docs/configuration) for the full reference. A minimal example:
+
+   ```toml
+   [changelog]
+   header = ""
+   body = """
+   {% for group, commits in commits | group_by(attribute="group") %}
+   ### {{ group | upper_first }}
+   {% for commit in commits %}
+   - {{ commit.message | upper_first }} ({{ commit.id | truncate(length=7, end="") }})
+   {% endfor %}
+   {% endfor %}
+   """
+   trim = true
+
+   [git]
+   conventional_commits = true
+   commit_parsers = [
+     { message = "^feat", group = "Features" },
+     { message = "^fix", group = "Bug Fixes" },
+     { message = "^docs", group = "Documentation" },
+     { message = "^chore", group = "Miscellaneous" },
+     { message = "^refactor", group = "Refactor" },
+   ]
+   ```
+
+When enabled, git-cliff generates the changelog from commits between the previous tag and HEAD, and attaches it to the GitHub Release instead of the default notes.
 
 ## Makefile Targets
 
